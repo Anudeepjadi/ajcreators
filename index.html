@@ -1,0 +1,1262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b17">
+<meta name="description" content="AJ Creators turns business ideas into useful mobile apps, websites, software and AI-powered workflows. Hyderabad, India and beyond.">
+<title>AJ Creators | Ideas to Impact</title>
+<link rel="icon" type="image/png" href="./favicon.png" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080b17;--bg2:#0d1222;--panel:#111a2e;--ink:#f5f7ff;--muted:#a2acc3;--line:#ffffff18;--blue:#718cff;--violet:#a58bff;--mint:#75f0c0;--orange:#ffb78c;--white:#fff;--radius:26px;--max:1220px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.55;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 75% 7%,#4a4e9b26,transparent 32%),radial-gradient(ellipse at 8% 48%,#145b5140,transparent 30%),linear-gradient(180deg,#080b17,#0b1020 55%,#080b17)}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.mono,.eyebrow,.kicker,.micro{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.12em}.mono{font-size:10px;color:#aab7d6}.topbar{height:82px;position:sticky;top:0;z-index:50;border-bottom:1px solid #ffffff12;background:#080b17c9;backdrop-filter:blur(18px)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.05em}.brand img{width:52px;height:52px;object-fit:contain;border-radius:15px;background:#080b17;box-shadow:0 0 22px #688cff38;border:1px solid #9eabff35}.brand-name{font:700 14px "Space Grotesk",sans-serif;line-height:1.08}.brand-name small{display:block;color:#99a5c2;font:10px "DM Mono",monospace;letter-spacing:.15em;margin-top:5px}.navlinks{display:flex;align-items:center;gap:27px;color:#b6bfd4;font-size:12px;font-weight:700}.navlinks a{transition:color .2s}.navlinks a:hover{color:var(--mint)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid #ffffff25;border-radius:100px;padding:13px 19px;background:#fff;color:#0b1020;font-size:12px;font-weight:800;transition:transform .25s,box-shadow .25s,background .25s}.nav-cta:hover,.button:hover{transform:translateY(-3px);box-shadow:0 12px 35px #8b9cff36}.button.primary{background:linear-gradient(110deg,#a8b8ff,#c1aaff);border:0;color:#0b1020}.button.ghost{background:#ffffff0b;color:#fff;border-color:#ffffff30}.button.mint{background:var(--mint);color:#071b17;border:0}.menu{display:none;border:1px solid var(--line);background:#ffffff0c;color:white;border-radius:12px;padding:9px 12px;font-size:20px}
+.hero{min-height:calc(100svh - 82px);padding:80px 0 66px;display:flex;align-items:center;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:44px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#c4ccff;font-size:10px;border:1px solid #9aaaff42;border-radius:99px;padding:9px 13px;background:#718cff12}.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 14px var(--mint)}h1,h2,h3,p{margin-top:0}h1{font:700 clamp(48px,6.5vw,88px)/.99 "Space Grotesk",sans-serif;letter-spacing:-.075em;margin:25px 0 22px;max-width:760px}.gradient{background:linear-gradient(100deg,#b7c4ff 0%,#a88aff 45%,#78efc4 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{max-width:590px;color:#aab4ca;font-size:16px;line-height:1.8}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 24px}.hero-meta{display:flex;gap:18px;flex-wrap:wrap;color:#8390aa;font:10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em}.hero-meta span:before{content:"✳";color:var(--mint);margin-right:8px}.hero-art{min-height:560px;position:relative;display:grid;place-items:center;perspective:1200px}.aura{position:absolute;width:min(43vw,520px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#9e8aff40 0,#718cff18 40%,transparent 70%);filter:blur(15px);animation:breathe 7s ease-in-out infinite}.orbit{position:absolute;width:440px;height:440px;border:1px solid #c4caff27;border-radius:50%;transform:rotateX(66deg) rotateZ(-20deg);animation:orbit 28s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #7ef0c133;border-radius:50%;inset:35px}.orbit:after{inset:85px;border-color:#b19cff38}.orbit-dot{position:absolute;width:11px;height:11px;border-radius:50%;background:var(--mint);box-shadow:0 0 25px var(--mint);top:36px;left:78px}.device-stage{width:min(390px,82vw);position:relative;transform-style:preserve-3d;transform:rotateY(-17deg) rotateX(7deg) rotateZ(-3deg);transition:transform .25s ease-out;z-index:2}.device{background:linear-gradient(145deg,#283451,#10182b 45%,#202b46);border:1px solid #ffffff50;border-radius:34px;padding:11px;box-shadow:25px 38px 80px #0009,inset 0 1px 0 #fff5;transform:translateZ(25px)}.device-inner{overflow:hidden;border-radius:25px;background:#f6f7fb;color:#10172a;min-height:450px;padding:18px}.device-top{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:900}.device-logo{display:flex;align-items:center;gap:7px}.device-logo b{width:23px;height:23px;border-radius:8px;background:linear-gradient(140deg,#536df5,#a28aff);display:grid;place-items:center;color:white}.device-pill{background:#e8ebff;color:#5062cb;padding:5px 8px;border-radius:99px;font-size:9px}.device-title{font:700 26px/1.05 "Space Grotesk";letter-spacing:-.06em;margin:24px 0 6px}.device-sub{font-size:10px;color:#7d879b}.device-gradient{margin:17px 0;padding:16px;border-radius:17px;color:white;background:linear-gradient(125deg,#5169ed,#8f71e9 65%,#a88bff);box-shadow:0 12px 24px #6c6ce344}.device-gradient small{opacity:.8;font-size:9px}.device-gradient strong{display:block;font:700 23px "Space Grotesk";margin:4px 0}.device-stats{display:grid;grid-template-columns:1fr 1fr;gap:9px}.device-stat{background:white;border:1px solid #e9ebf2;border-radius:13px;padding:12px}.device-stat small{font-size:8px;color:#8b94a5}.device-stat b{display:block;font:700 18px "Space Grotesk"}.device-list{margin-top:10px;background:white;border-radius:13px;padding:12px}.device-list-head{display:flex;justify-content:space-between;font-size:9px;font-weight:900;margin-bottom:5px}.device-row{display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid #eff0f4;font-size:9px;color:#657087}.device-row b{color:#1e2b43}.float-chip{position:absolute;z-index:4;padding:12px 15px;border:1px solid #ffffff35;border-radius:15px;background:#141d33d9;backdrop-filter:blur(12px);box-shadow:0 15px 40px #0006;font-size:11px;font-weight:800;animation:float 5s ease-in-out infinite}.float-chip span{display:block;color:#8f9bb5;font:9px "DM Mono";margin-top:3px}.float-a{top:15%;right:0}.float-b{bottom:12%;left:-2%;animation-delay:-2.5s}.scroll-cue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font:9px "DM Mono";letter-spacing:.18em;color:#77839e;display:flex;align-items:center;gap:12px}.scroll-cue:before{content:"";height:1px;width:35px;background:#65718d}
+.ticker{border-block:1px solid var(--line);background:#ffffff05;overflow:hidden;padding:17px 0}.ticker-track{display:flex;gap:38px;white-space:nowrap;width:max-content;animation:marquee 34s linear infinite;color:#929db8;font:11px "DM Mono";letter-spacing:.16em;text-transform:uppercase}.ticker strong{color:#d8def4}.ticker i{font-style:normal;color:var(--mint)}
+.section{padding:112px 0;position:relative}.section.alt{background:linear-gradient(180deg,#0c1222,#0a0f1d)}.section-head{max-width:720px;margin-bottom:48px}.kicker{font-size:10px;color:var(--mint);letter-spacing:.17em}.section h2{font:700 clamp(35px,4.6vw,62px)/1.04 "Space Grotesk";letter-spacing:-.065em;margin:15px 0 16px}.section-head p{color:#9aa6bf;line-height:1.8;max-width:640px;font-size:15px}.service-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:22px}.service-tabs{display:flex;flex-direction:column;gap:9px}.service-tab{text-align:left;border:1px solid var(--line);border-radius:17px;background:#ffffff05;color:#c2cbe0;padding:18px 19px;display:flex;align-items:center;justify-content:space-between;gap:15px;transition:.25s}.service-tab b{font:600 16px "Space Grotesk"}.service-tab span{font:10px "DM Mono";color:#77839e}.service-tab.active{background:linear-gradient(110deg,#718cff25,#a58bff13);border-color:#9caeff75;color:white;box-shadow:inset 3px 0 var(--mint)}.service-display{min-height:365px;border:1px solid #ffffff20;border-radius:25px;padding:35px;background:radial-gradient(circle at 90% 10%,#8f83ff25,transparent 38%),linear-gradient(135deg,#17223b,#101629);position:relative;overflow:hidden}.service-display:after{content:"";position:absolute;width:280px;height:280px;border:1px solid #ffffff17;border-radius:50%;right:-70px;bottom:-135px;box-shadow:0 0 0 28px #ffffff05,0 0 0 58px #ffffff04}.service-number{font:11px "DM Mono";color:var(--mint)}.service-display h3{font:700 clamp(28px,3.5vw,42px)/1.05 "Space Grotesk";letter-spacing:-.05em;max-width:480px;margin:20px 0 13px}.service-display p{color:#aab5cc;max-width:490px;font-size:14px;line-height:1.8}.service-points{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}.service-points span{padding:8px 11px;border:1px solid #ffffff20;border-radius:99px;color:#dce2f3;font-size:10px}.text-link{color:var(--mint);font-size:12px;font-weight:800;position:relative;z-index:2}
+.solution-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.solution{border:1px solid var(--line);border-radius:18px;padding:20px;background:#ffffff05}.solution small{color:var(--mint);font:10px "DM Mono"}.solution b{display:block;font:600 16px "Space Grotesk";margin:8px 0}.solution p{margin:0;color:#9ca8c0;font-size:12px;line-height:1.7}
+.work-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.work-card{border:1px solid #ffffff1b;border-radius:25px;overflow:hidden;background:#111a2d;position:relative;transition:transform .35s,border-color .35s}.work-card:hover{transform:translateY(-7px);border-color:#8ea0ff88}.work-card.large{grid-row:span 2}.work-art{min-height:260px;position:relative;overflow:hidden;display:grid;place-items:center;background:radial-gradient(circle at 50% 50%,#536be75c,transparent 65%),linear-gradient(140deg,#1c2948,#12182a)}.work-card.large .work-art{min-height:410px}.work-art.green{background:radial-gradient(circle at 50% 50%,#4b9d7860,transparent 62%),linear-gradient(140deg,#182e31,#131c29)}.work-art.warm{background:radial-gradient(circle at 50% 50%,#bb87504d,transparent 65%),linear-gradient(140deg,#392c2b,#171a2a)}.mock-window{width:72%;max-width:420px;background:#f6f7fc;border:7px solid #303c5b;border-radius:20px;padding:14px;color:#1c2940;box-shadow:0 28px 55px #0008;transform:rotateY(-12deg) rotateX(5deg);transition:transform .5s}.work-card:hover .mock-window{transform:rotateY(0) rotateX(0) translateY(-5px)}.mock-head{display:flex;justify-content:space-between;font-size:9px;font-weight:900}.mock-banner{margin:15px 0;padding:18px;border-radius:12px;background:linear-gradient(120deg,#536df0,#9d7af1);color:white;font:700 19px "Space Grotesk"}.mock-bars{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.mock-bars i{height:53px;border-radius:9px;background:#e7ebf8}.mock-chart{height:74px;margin-top:10px;border-radius:10px;background:linear-gradient(180deg,#dfe5ff,#fff);position:relative;overflow:hidden}.mock-chart:after{content:"";position:absolute;inset:15px 0 0;background:linear-gradient(150deg,transparent 35%,#617af4 36%,#617af4 38%,transparent 39%),linear-gradient(25deg,transparent 55%,#8a77e9 56%,#8a77e9 58%,transparent 59%)}.phone-mock{width:180px;height:340px;background:#0a1020;border:5px solid #6c7894;border-radius:29px;padding:9px;box-shadow:0 24px 60px #0009;transform:rotate(8deg);transition:.5s}.work-card:hover .phone-mock{transform:rotate(0) translateY(-8px)}.phone-screen{height:100%;border-radius:20px;background:#f7f8fc;color:#15213b;padding:13px;overflow:hidden}.phone-screen img{width:100%;height:115px;object-fit:contain}.phone-title{font:700 20px "Space Grotesk";margin:9px 0}.phone-sub{font-size:8px;color:#78849b}.phone-action{margin-top:14px;background:#1f6b48;color:white;border-radius:99px;padding:9px;text-align:center;font-size:9px;font-weight:800}.note-ui{width:76%;max-width:390px;background:#202943;border:1px solid #a5b7ff66;border-radius:20px;padding:18px;box-shadow:0 25px 60px #0008;transform:rotate(-5deg);transition:.5s}.work-card:hover .note-ui{transform:rotate(0) translateY(-5px)}.note-ui h4{font:600 20px "Space Grotesk";margin:0 0 13px}.note-line{height:8px;background:#ffffff21;border-radius:9px;margin:11px 0}.note-line:nth-child(3){width:80%}.note-line:nth-child(4){width:56%}.note-tag{display:inline-block;background:#8d83ed33;color:#c8c0ff;border-radius:7px;padding:6px 8px;font:9px "DM Mono"}.work-meta{padding:22px 24px}.work-meta .label{color:var(--mint);font:10px "DM Mono";letter-spacing:.13em;text-transform:uppercase}.work-meta h3{font:600 22px "Space Grotesk";margin:7px 0}.work-meta p{font-size:12px;color:#9ca8c0;max-width:600px;margin:0}.disclaimer{font:10px "DM Mono";color:#74819b;margin-top:22px}
+.about-band{display:grid;grid-template-columns:.65fr 1.35fr;gap:40px;align-items:center;border-block:1px solid var(--line);padding:44px 0}.about-logo{display:grid;place-items:center;min-height:250px;border-radius:25px;background:radial-gradient(circle,#ffffff1c,transparent 68%),#11182a}.about-logo img{width:220px;height:220px;object-fit:contain;border-radius:24px;filter:drop-shadow(0 15px 32px #617cff55)}.about-copy h2{font:700 clamp(30px,4vw,48px)/1.05 "Space Grotesk";letter-spacing:-.06em}.about-copy p{color:#9ca8c0;font-size:14px;line-height:1.85}.about-tags{display:flex;gap:8px;flex-wrap:wrap}.about-tags span{font:10px "DM Mono";color:#d8e1f7;border:1px solid #ffffff20;border-radius:99px;padding:8px 11px}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price-card{position:relative;padding:28px;border:1px solid #ffffff20;border-radius:23px;background:linear-gradient(155deg,#17223a,#101629);display:flex;flex-direction:column}.price-card.featured{border-color:#9c9dff;box-shadow:0 0 0 1px #9c9dff35,0 25px 60px #6f6aff18;transform:translateY(-8px)}.price-card .tag{align-self:flex-start;font:9px "DM Mono";color:var(--mint);background:#75f0c014;border:1px solid #75f0c033;border-radius:99px;padding:7px 10px}.price-card h3{font:600 22px "Space Grotesk";margin:17px 0 4px}.price-card>p{color:#9ca8c0;font-size:12px;min-height:40px}.price{font:700 36px "Space Grotesk";letter-spacing:-.06em;margin:13px 0 2px}.price small{font:11px Manrope;color:#8794ad;letter-spacing:0}.price-card ul{padding:0;list-style:none;margin:20px 0 25px;flex:1}.price-card li{font-size:12px;color:#c1cbe0;padding:8px 0;border-bottom:1px solid #ffffff10}.price-card li:before{content:"↗";color:var(--mint);margin-right:9px}.price-card .button{width:100%}.price-note{font-size:10px;color:#7e8ba6;margin-top:20px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:21px;border:1px solid var(--line);border-radius:18px;background:#ffffff05}.step-num{font:11px "DM Mono";color:var(--mint)}.step h3{font:600 17px "Space Grotesk";margin:13px 0 7px}.step p{font-size:11px;color:#9ca8c0;margin:0;line-height:1.7}
+.contact-section{padding:120px 0;background:radial-gradient(ellipse at 15% 30%,#7b83ff20,transparent 35%),radial-gradient(ellipse at 90% 80%,#63e5b91a,transparent 35%),#0c1221}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:stretch}.contact-copy h2{font:700 clamp(42px,5vw,66px)/.98 "Space Grotesk";letter-spacing:-.07em;margin:17px 0}.contact-copy p{color:#a1adc5;line-height:1.8;font-size:14px;max-width:440px}.contact-methods{display:grid;gap:10px;margin-top:28px}.contact-method{display:flex;align-items:center;gap:12px;padding:13px 15px;border:1px solid #ffffff20;border-radius:14px;background:#ffffff08}.contact-method i{font-style:normal;width:34px;height:34px;border-radius:11px;background:#ffffff12;display:grid;place-items:center;color:var(--mint)}.contact-method small{display:block;color:#8491ab;font:9px "DM Mono";letter-spacing:.1em}.contact-method b{font-size:12px}.lead-form{border:1px solid #ffffff25;border-radius:24px;background:#111a2d;padding:29px;box-shadow:0 25px 70px #0005}.lead-form h3{font:600 23px "Space Grotesk";margin:0 0 7px}.lead-form>p{font-size:11px;color:#929fba;margin-bottom:23px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font:10px "DM Mono";color:#aebbd5;text-transform:uppercase;letter-spacing:.08em}.field input,.field select,.field textarea{width:100%;border:1px solid #ffffff24;border-radius:11px;padding:12px 13px;background:#0c1324;color:#f3f5ff;outline:0;font-size:12px}.field input:focus,.field select:focus,.field textarea:focus{border-color:#8c9cff;box-shadow:0 0 0 3px #8c9cff22}.field select option{background:#111a2d}.field textarea{min-height:110px;resize:vertical}.lead-form .button{width:100%;margin-top:17px}.form-note{font-size:10px!important;color:#8290aa!important;margin:12px 0 0!important;line-height:1.6}.footer{border-top:1px solid var(--line);padding:35px 0 26px;background:#070a14}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap}.footer .brand img{width:46px;height:46px}.footer-links{display:flex;gap:18px;flex-wrap:wrap;color:#9ba7c1;font-size:11px}.copyright{border-top:1px solid #ffffff13;margin-top:25px;padding-top:18px;color:#6f7b95;font:9px "DM Mono";display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:45;display:flex;align-items:center;gap:10px;padding:13px 18px;border-radius:99px;background:#75f0c0;color:#06251b;font-size:11px;font-weight:900;box-shadow:0 12px 35px #0008;transition:.25s}.whatsapp-float:hover{transform:translateY(-4px);box-shadow:0 18px 40px #75f0c044}.whatsapp-float span{font-size:17px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}.service-display.swap{animation:swap .35s ease}.hero,.section,.ticker,.topbar,.footer{isolation:isolate}
+@keyframes orbit{to{transform:rotateX(66deg) rotateZ(340deg)}}@keyframes breathe{50%{transform:scale(1.13);opacity:.65}}@keyframes float{50%{transform:translateY(-12px) rotate(1deg)}}@keyframes marquee{to{transform:translateX(-50%)}}@keyframes swap{from{opacity:.25;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){.navlinks{gap:14px}.navlinks a{font-size:10px}.hero-grid{grid-template-columns:1fr 1fr;gap:15px}.hero-art{min-height:490px}.orbit{width:350px;height:350px}.service-layout{grid-template-columns:1fr}.service-tabs{display:grid;grid-template-columns:1fr 1fr}.work-grid{grid-template-columns:1fr 1fr}.work-card.large{grid-row:auto}.work-card.large .work-art{min-height:300px}.about-band{grid-template-columns:.7fr 1.3fr}.pricing-grid{gap:10px}.price-card{padding:21px}.contact-grid{grid-template-columns:1fr 1.1fr}}
+@media(max-width:680px){.wrap{width:calc(100% - 34px)}.topbar{height:70px}.brand img{width:46px;height:46px}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:#0b1020;border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.navlinks a{font-size:13px}.nav-cta{display:none}.menu{display:block}.hero{min-height:auto;padding:65px 0 75px}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:460px;margin-top:12px}.device-stage{width:min(330px,83vw)}.device-inner{min-height:390px}.device-title{font-size:23px}.orbit{width:320px;height:320px}.float-a{right:0;top:8%}.float-b{left:0;bottom:5%}.scroll-cue{bottom:17px}.section{padding:78px 0}.section h2{font-size:39px}.service-tabs{grid-template-columns:1fr 1fr}.service-tab{padding:13px}.service-tab b{font-size:12px}.service-display{padding:25px;min-height:360px}.solution-strip{grid-template-columns:1fr}.work-grid{grid-template-columns:1fr}.work-card.large .work-art{min-height:310px}.work-art{min-height:240px}.about-band{grid-template-columns:1fr;gap:22px}.about-logo{min-height:190px}.about-logo img{width:145px;height:145px}.pricing-grid{grid-template-columns:1fr}.price-card.featured{transform:none}.steps{grid-template-columns:1fr 1fr}.contact-section{padding:80px 0}.contact-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.lead-form{padding:21px}.footer-row{align-items:flex-start;flex-direction:column}.whatsapp-float{right:12px;bottom:12px;padding:13px 16px}.whatsapp-float .whats-text{display:inline}}
+@media(max-width:390px){h1{font-size:46px}.hero-art{min-height:420px}.device-stage{width:285px}.device-inner{padding:14px}.service-tabs{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.hero-actions .button{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+/* --- Creative studio refresh: cinematic, vivid and interactive --- */
+:root{
+ --bg:#070914;--bg2:#0b1022;--panel:#10182d;--ink:#f7f8ff;--muted:#aab3ca;
+ --line:#ffffff1b;--blue:#6f8cff;--violet:#b08cff;--mint:#67f3cf;
+ --orange:#ffb17f;--radius:28px;--max:1240px;
+}
+body{
+ background:#070914;
+ background-image:
+  radial-gradient(ellipse at 82% 5%,#694cff2b 0,transparent 31%),
+  radial-gradient(ellipse at 5% 38%,#00d9c01b 0,transparent 28%),
+  radial-gradient(ellipse at 90% 72%,#347cff18 0,transparent 30%);
+}
+body:before{
+ background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);
+ background-size:64px 64px;mask-image:linear-gradient(to bottom,#000 0%,transparent 75%);
+ opacity:.34;
+}
+.topbar{background:#070914d9;border-bottom-color:#ffffff16;box-shadow:0 10px 40px #0003}
+.nav img,.brand img,.logo img{object-fit:contain;filter:drop-shadow(0 0 16px #788bff55)}
+.btn,.button,.cta,.primary{
+ border-radius:999px!important;
+ box-shadow:0 8px 28px #647cff25;
+ transition:transform .25s ease,box-shadow .25s ease,filter .25s ease;
+}
+.btn:hover,.button:hover,.cta:hover,.primary:hover{transform:translateY(-3px);box-shadow:0 14px 38px #647cff45;filter:saturate(1.2)}
+.card,.service-card,.project-card,.price-card,.step,.feature-card{
+ border:1px solid #ffffff17!important;
+ background:linear-gradient(145deg,#ffffff0d,#ffffff04)!important;
+ box-shadow:0 22px 70px #0003;
+ backdrop-filter:blur(16px);
+ transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;
+}
+.card:hover,.service-card:hover,.project-card:hover,.price-card:hover,.feature-card:hover{
+ transform:translateY(-7px);border-color:#8e9cff75!important;box-shadow:0 28px 80px #566dff20;
+}
+h1,h2,h3{letter-spacing:-.045em}
+h1{
+ background:linear-gradient(105deg,#fff 12%,#c9d4ff 48%,#b79bff 75%,#7cf3dc 100%);
+ -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.eyebrow,.kicker{color:#9fafff}
+section{position:relative}
+section:has(.card),section:has(.service-card){isolation:isolate}
+img{max-width:100%;height:auto}
+img[src*="jaanus-developers-creators-logo"]{
+ display:block;object-fit:contain;max-width:100%;
+}
+@media(prefers-reduced-motion:no-preference){
+ .hero:after,.hero-section:after{
+  content:"";position:absolute;z-index:-1;width:420px;height:420px;right:-130px;top:12%;
+  border-radius:50%;background:radial-gradient(circle,#796bff35,transparent 68%);
+  filter:blur(8px);animation:studioFloat 9s ease-in-out infinite alternate;
+ }
+ @keyframes studioFloat{to{transform:translate(-35px,28px) scale(1.12)}}
+}
+@media(max-width:700px){
+ .wrap{width:min(var(--max),calc(100% - 32px))}
+ .topbar{height:72px}
+}
+
+.aj-mark{
+ display:inline-grid;place-items:center;flex:0 0 auto;
+ width:48px;height:48px;border-radius:15px;
+ color:#fff;font-weight:900;font-size:20px;letter-spacing:-.08em;
+ background:linear-gradient(135deg,#6d8cff 0%,#a16cff 52%,#55e6d0 100%);
+ border:1px solid #ffffff55;
+ box-shadow:0 0 28px #7a78ff55,inset 0 1px 0 #ffffff70;
+ text-shadow:0 2px 8px #15122f88;
+}
+.about-logo .aj-mark{width:100px;height:100px;border-radius:28px;font-size:42px}
+.phone-screen .aj-mark{margin:12px auto;width:54px;height:54px}
+.footer-row .aj-mark{width:40px;height:40px;border-radius:13px;font-size:17px}
+.aj-mark-img{display:block;flex:0 0 auto;width:52px;height:52px;object-fit:contain;border-radius:14px;filter:drop-shadow(0 0 18px #8b79ff66)}
+.about-logo .aj-mark-img{width:180px;height:180px;border-radius:28px}
+.phone-screen .aj-mark-img{width:54px;height:54px;margin:12px auto}
+.footer-row .aj-mark-img{width:40px;height:40px;border-radius:12px}
+
+
+/* AJ CREATORS — premium visual upgrade */
+:root{
+  --aj-bg:#050611;--aj-panel:#101326;--aj-ink:#f8f8ff;--aj-muted:#aeb4ca;
+  --aj-blue:#6c8cff;--aj-purple:#b56cff;--aj-cyan:#5ef0dc;--aj-pink:#ff76c8;
+}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  color:var(--aj-ink);
+  background:
+   radial-gradient(ellipse at 12% 8%,#654bff30,transparent 32%),
+   radial-gradient(ellipse at 90% 24%,#00d9ce1c,transparent 29%),
+   radial-gradient(ellipse at 52% 92%,#a34cff18,transparent 34%),
+   #050611!important;
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.22;
+ background-image:linear-gradient(#ffffff0a 1px,transparent 1px),linear-gradient(90deg,#ffffff0a 1px,transparent 1px);
+ background-size:54px 54px;
+ mask-image:linear-gradient(to bottom,#000,transparent 85%);
+}
+::selection{background:#8d75ff;color:#fff}
+a{transition:color .2s ease,opacity .2s ease}
+header,.topbar,nav{
+ background:rgba(5,6,17,.76)!important;
+ backdrop-filter:blur(22px) saturate(150%);
+ border-bottom:1px solid #ffffff17!important;
+}
+.aj-mark{
+ width:52px;height:52px;border-radius:17px;
+ background:linear-gradient(135deg,#6c8cff,#a46bff 55%,#52e8d6);
+ box-shadow:0 0 0 5px #8b79ff12,0 8px 36px #7869ff55,inset 0 1px 0 #ffffff88;
+ font-size:22px;letter-spacing:-.1em;
+}
+h1{
+ font-size:clamp(3.2rem,8vw,7rem)!important;
+ line-height:.98!important;letter-spacing:-.075em!important;
+ background:linear-gradient(105deg,#fff 8%,#d5dcff 38%,#b9a0ff 68%,#71f4df 100%);
+ -webkit-background-clip:text;background-clip:text;color:transparent!important;
+ text-wrap:balance;
+}
+h2{letter-spacing:-.055em!important;line-height:1.06!important}
+p{line-height:1.75}
+button,.btn,.button,.cta,.primary,a.button{
+ border-radius:999px!important;
+ transition:transform .25s ease,box-shadow .25s ease,filter .25s ease!important;
+}
+button:hover,.btn:hover,.button:hover,.cta:hover,.primary:hover,a.button:hover{
+ transform:translateY(-3px);filter:saturate(1.2);
+ box-shadow:0 14px 42px #6d75ff45!important;
+}
+.card,.service-card,.project-card,.price-card,.feature-card,.step,
+[class*="card"],[class*="tile"]{
+ border:1px solid #ffffff18!important;
+ background:linear-gradient(145deg,#ffffff10,#ffffff04)!important;
+ box-shadow:0 24px 75px #0005!important;
+ backdrop-filter:blur(18px);
+ transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s;
+}
+.card:hover,.service-card:hover,.project-card:hover,.price-card:hover,
+.feature-card:hover,.step:hover,[class*="card"]:hover,[class*="tile"]:hover{
+ transform:translateY(-8px);
+ border-color:#a18aff80!important;
+ box-shadow:0 30px 90px #665cff25!important;
+}
+section{position:relative}
+section:not(:first-of-type){isolation:isolate}
+.eyebrow,.kicker,.section-tag{
+ color:#9fafff!important;letter-spacing:.16em!important;text-transform:uppercase;
+}
+img{border-radius:inherit}
+input,textarea,select{
+ background:#ffffff0a!important;color:#fff!important;
+ border:1px solid #ffffff25!important;border-radius:16px!important;
+}
+input:focus,textarea:focus,select:focus{
+ outline:none!important;border-color:#9d83ff!important;box-shadow:0 0 0 4px #9d83ff20!important;
+}
+footer{border-top:1px solid #ffffff18!important;background:#060713!important}
+@media(prefers-reduced-motion:no-preference){
+ .hero:after,.hero-section:after{
+  content:"";position:absolute;z-index:-1;right:-8%;top:4%;width:min(48vw,580px);aspect-ratio:1;
+  border-radius:50%;background:conic-gradient(from 30deg,#6b8cff22,#b16aff22,#55f0d822,#6b8cff22);
+  filter:blur(45px);animation:ajOrbitGlow 14s linear infinite;
+ }
+ @keyframes ajOrbitGlow{to{transform:rotate(360deg) scale(1.08)}}
+ .reveal{animation:ajFadeUp .8s both}
+ @keyframes ajFadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+}
+@media(max-width:700px){
+ h1{font-size:clamp(2.7rem,14vw,4.5rem)!important}
+ .aj-mark{width:44px;height:44px;border-radius:14px}
+}
+
+
+/* AJ MOTION SYSTEM — cinematic scroll + tactile interactions */
+:root{--motion-ease:cubic-bezier(.2,.75,.2,1);--pointer-x:50vw;--pointer-y:30vh}
+html{scroll-behavior:smooth}
+body{overflow-x:hidden}
+#aj-progress{position:fixed;inset:0 auto auto 0;height:3px;width:0;z-index:9999;
+ background:linear-gradient(90deg,#61e8dc,#7c8cff,#c17aff,#ff79c8);
+ box-shadow:0 0 18px #8b7cffaa;transform-origin:left}
+#aj-noise{position:fixed;inset:0;z-index:80;pointer-events:none;opacity:.025;
+ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+
+.aj-reveal{opacity:0;transform:translateY(42px) scale(.985);filter:blur(5px);
+ transition:opacity .9s var(--motion-ease),transform .9s var(--motion-ease),filter .9s var(--motion-ease)}
+.aj-reveal.aj-in{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+.aj-reveal[data-aj-delay="1"]{transition-delay:.08s}.aj-reveal[data-aj-delay="2"]{transition-delay:.16s}
+.aj-reveal[data-aj-delay="3"]{transition-delay:.24s}.aj-reveal[data-aj-delay="4"]{transition-delay:.32s}
+.hero-copy-block .eyebrow{animation:ajRise .8s .12s both}
+.hero h1{animation:ajRise 1s .22s both}
+.hero-copy,.hero-actions,.hero-meta{animation:ajRise .9s .42s both}
+.hero-art{transform-style:preserve-3d;will-change:transform;transition:transform .25s ease-out}
+.device-stage{transform-style:preserve-3d;will-change:transform}
+.device{box-shadow:0 40px 110px #0008,0 0 70px #8c76ff20}
+.float-chip{animation:ajFloat 5s ease-in-out infinite}
+.float-b{animation-delay:-2.4s}
+.orbit{animation:ajOrbit 28s linear infinite}
+.orbit-dot{animation:ajPulse 2.8s ease-in-out infinite}
+@keyframes ajRise{from{opacity:0;transform:translateY(26px);filter:blur(6px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes ajFloat{0%,100%{transform:translate3d(0,0,0) rotate(-2deg)}50%{transform:translate3d(0,-14px,0) rotate(2deg)}}
+@keyframes ajOrbit{to{transform:rotate(360deg)}}
+@keyframes ajPulse{0%,100%{transform:scale(.85);opacity:.7}50%{transform:scale(1.2);opacity:1}}
+.work-card,.price-card,.step,.solution,.service-tab,.button{transform-style:preserve-3d}
+.work-card:after,.price-card:after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+ background:linear-gradient(115deg,transparent 15%,#ffffff12 45%,transparent 72%);
+ transform:translateX(-130%);transition:transform .8s var(--motion-ease)}
+.work-card:hover:after,.price-card:hover:after{transform:translateX(130%)}
+.service-tab{transition:transform .25s var(--motion-ease),background .25s,border-color .25s}
+.service-tab:hover{transform:translateX(5px)}
+.button,.nav-cta{position:relative;isolation:isolate;overflow:hidden}
+.button:before,.nav-cta:before{content:"";position:absolute;inset:0;z-index:-1;
+ background:linear-gradient(110deg,transparent 20%,#ffffff35 50%,transparent 80%);
+ transform:translateX(-120%);transition:transform .7s}
+.button:hover:before,.nav-cta:hover:before{transform:translateX(120%)}
+.ticker-track{will-change:transform}
+.section-head .kicker{display:inline-flex;align-items:center;gap:10px}
+.section-head .kicker:before{content:"";width:24px;height:1px;background:linear-gradient(90deg,#64e9dc,#9d79ff)}
+@media(pointer:fine){
+ 
+ 
+ 
+ 
+}
+@media(pointer:coarse){}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+ .aj-reveal{opacity:1;transform:none;filter:none}
+ #aj-progress,#aj-noise,
+}
+
+
+/* AJ CINEMATIC SCROLL STORY STYLES */
+.aj-story{height:420vh;position:relative;background:#0b0808;color:#f8f3ed;isolation:isolate}
+.aj-story-pin{height:100vh;min-height:650px;position:sticky;top:0;overflow:hidden;
+ background:radial-gradient(ellipse at 72% 50%,#5a2e1d 0%,#241510 34%,#100d0d 73%,#09090d 100%)}
+.aj-story-grain{position:absolute;inset:0;pointer-events:none;opacity:.12;z-index:1;
+ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+.aj-story-top,.aj-story-bottom{position:absolute;z-index:5;left:5vw;right:5vw;display:flex;align-items:center;justify-content:space-between;
+ font-size:10px;letter-spacing:.19em;color:#d8c9beaa}
+.aj-story-top{top:30px}.aj-story-bottom{bottom:28px}
+.aj-story-counter{font-variant-numeric:tabular-nums}.aj-story-counter b{color:#fff;font-size:13px}
+.aj-story-copy{position:absolute;z-index:4;left:10vw;top:50%;width:min(34vw,450px);transform:translateY(-50%)}
+.aj-story-kicker{font-size:10px;letter-spacing:.24em;color:#e68d5e;display:block;margin-bottom:22px}
+.aj-story-copy h2{font-size:clamp(48px,6.5vw,100px);line-height:.91;letter-spacing:-.075em;margin:0 0 25px;font-weight:550}
+.aj-story-copy h2 em{font-family:Georgia,serif;font-weight:400;color:#d88b61}
+.aj-story-copy p{max-width:350px;color:#d0c0b5;line-height:1.8;font-size:14px}
+.aj-story-link{display:inline-flex;gap:28px;align-items:center;margin-top:24px;color:#fff;font-size:12px;text-decoration:none;border-bottom:1px solid #ffffff66;padding-bottom:12px}
+.aj-story-link span{color:#e9966c;font-size:18px}
+.aj-scene{position:absolute;width:min(53vw,760px);height:min(72vh,720px);right:5vw;top:50%;transform:translateY(-50%);display:grid;place-items:center;perspective:1100px}
+.aj-scene-halo{position:absolute;width:72%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#d9783a35,transparent 68%);filter:blur(25px);transition:all .8s}
+.aj-orbit{position:absolute;border:1px solid #f0b48a38;border-radius:50%;transform:rotate(-24deg)}
+.aj-orbit-one{width:78%;height:38%;animation:ajStoryOrbit 24s linear infinite}
+.aj-orbit-two{width:62%;height:85%;transform:rotate(62deg);border-color:#e28b5b24;animation:ajStoryOrbit 32s linear infinite reverse}
+@keyframes ajStoryOrbit{to{rotate:360deg}}
+.aj-core{position:absolute;width:clamp(150px,19vw,280px);aspect-ratio:1;border-radius:36% 42% 38% 44%;
+ display:grid;place-items:center;background:radial-gradient(circle at 32% 25%,#f5b47c,#9b4e2c 38%,#341b17 75%);
+ box-shadow:inset -22px -26px 50px #160c0b99,inset 9px 10px 28px #ffd4a555,0 35px 100px #0009,0 0 100px #df7a3b28;
+ transform:rotate(-18deg);transition:transform .8s cubic-bezier(.2,.8,.2,1),border-radius .8s}
+.aj-core span{font-size:clamp(56px,8vw,112px);font-weight:900;letter-spacing:-.12em;color:#fff2e6;text-shadow:0 6px 22px #4b2017aa;transform:rotate(18deg)}
+.aj-core i{position:absolute;right:16%;top:14%;font-style:normal;color:#ffe1c5;font-size:22px}
+.aj-scene-label{position:absolute;font-size:9px;letter-spacing:.2em;color:#f1c2a0a8}
+.label-one{top:9%;right:12%}.label-two{bottom:9%;left:9%}
+.aj-interface{position:absolute;opacity:0;transform:translateY(45px) rotateY(-16deg) scale(.82);transition:opacity .65s,transform .85s cubic-bezier(.2,.8,.2,1);
+ box-shadow:0 35px 100px #0009;border:1px solid #ffffff38;backdrop-filter:blur(12px)}
+.ui-phone{width:31%;height:62%;border-radius:32px;padding:30px 16px 18px;background:linear-gradient(145deg,#28263a,#10121d);left:8%;top:17%;border:5px solid #77717b}
+.ui-notch{position:absolute;top:8px;left:35%;width:30%;height:13px;border-radius:20px;background:#08090e}
+.ui-brand{font-size:8px;letter-spacing:.16em;color:#b5b8d2;margin:18px 0 32px}
+.ui-greeting{font-size:23px;line-height:1.05;color:white}.ui-greeting b{color:#a995ff}
+.ui-orb{width:72px;height:72px;border-radius:50%;margin:22px auto;background:radial-gradient(circle at 32% 25%,#b5f4e5,#627ce9 42%,#5a3a8d 80%);box-shadow:0 0 35px #8d7cff88}
+.ui-line{height:5px;width:55%;border-radius:8px;background:#ffffff24;margin:10px 0}.ui-line.wide{width:90%}
+.ui-bottom{position:absolute;bottom:17px;left:17px;right:17px;display:flex;justify-content:space-between}
+.ui-bottom i{width:15px;height:15px;border-radius:5px;background:#9b8bff}
+.ui-browser{width:66%;height:57%;right:0;top:20%;border-radius:13px;background:#171a25;padding:12px}
+.ui-browser-top{height:20px;display:flex;align-items:center;gap:5px;color:#aaa;font-size:7px}
+.ui-browser-top i{width:5px;height:5px;border-radius:50%;background:#e78c6b}.ui-browser-top span{margin-left:18px}
+.ui-browser-hero{height:72%;padding:9% 10%;background:radial-gradient(circle at 85% 40%,#6c5bb0,#22243b 55%,#141622);display:flex;flex-direction:column;justify-content:center}
+.ui-browser-hero small{font-size:7px;letter-spacing:.2em;color:#b7b5e8}
+.ui-browser-hero b{font-size:clamp(20px,3vw,43px);line-height:.95;margin-top:12px;color:white;letter-spacing:-.06em}
+.ui-browser-pill{width:75px;height:15px;border-radius:20px;background:linear-gradient(90deg,#8c7cff,#64dfd0);margin-top:18px}
+.ui-browser-cards{display:flex;gap:7px;margin-top:8px}.ui-browser-cards i{height:25px;flex:1;background:#ffffff14;border-radius:4px}
+.ui-dashboard{width:64%;height:51%;right:5%;top:25%;padding:24px;border-radius:17px;background:linear-gradient(145deg,#1c2630,#10171d)}
+.ui-dash-head{font-size:8px;letter-spacing:.16em;color:#a6b7ba;display:flex;justify-content:space-between}
+.ui-dash-head b{color:#72e0c7;font-size:15px}.ui-dash-number{font-size:clamp(27px,4vw,54px);margin:24px 0;color:#f5fffc;letter-spacing:-.07em}
+.ui-dash-number small{font-size:10px;color:#6ee3bf;letter-spacing:0}
+.ui-chart{height:42%;display:flex;align-items:end;gap:7px;border-bottom:1px solid #ffffff22}
+.ui-chart i{flex:1;border-radius:5px 5px 0 0;background:linear-gradient(#79e2c5,#4e8b84);height:var(--h,40%)}
+.ui-chart i:nth-child(3n){--h:72%}.ui-chart i:nth-child(3n + 1){--h:48%}.ui-chart i:nth-child(3n + 2){--h:88%}
+.ui-dash-foot{display:flex;justify-content:space-between;margin-top:16px;color:#8fa6a4;font-size:7px;letter-spacing:.12em}
+.aj-floating-tag{position:absolute;padding:12px 16px;border-radius:40px;background:#ffffff12;border:1px solid #ffffff30;color:#f8e5d8;font-size:8px;letter-spacing:.12em;backdrop-filter:blur(12px);opacity:0;transform:translateY(20px);transition:all .7s}
+.tag-mobile{left:0;top:16%}.tag-web{right:0;top:8%}.tag-ai{right:4%;bottom:12%}
+.aj-story-track{width:100px;height:1px;background:#ffffff35;overflow:hidden}.aj-story-track i{display:block;width:0;height:100%;background:#e9976c}
+.aj-story-steps{height:100%;position:relative;margin-top:-100vh;pointer-events:none}
+.aj-story-steps div{height:100vh}
+.aj-story[data-scene="1"] .aj-core{transform:translate(-12%,4%) rotate(10deg) scale(.76);border-radius:28%}
+.aj-story[data-scene="1"] .ui-phone{opacity:1;transform:translateY(0) rotateY(-7deg) scale(1)}
+.aj-story[data-scene="2"] .aj-core{opacity:.16;transform:translate(-25%,20%) scale(.42)}
+.aj-story[data-scene="2"] .ui-phone{opacity:.4;transform:translate(-30%,4%) rotateY(-18deg) scale(.82)}
+.aj-story[data-scene="2"] .ui-browser{opacity:1;transform:translateY(0) rotateY(-4deg) scale(1)}
+.aj-story[data-scene="3"] .aj-core{opacity:.12;transform:translate(-35%,25%) scale(.3)}
+.aj-story[data-scene="3"] .ui-phone,.aj-story[data-scene="3"] .ui-browser{opacity:.2;transform:translate(-25%,0) scale(.78)}
+.aj-story[data-scene="3"] .ui-dashboard{opacity:1;transform:translateY(0) rotateY(-3deg) scale(1)}
+.aj-story[data-scene="1"] .tag-mobile,.aj-story[data-scene="2"] .tag-web,.aj-story[data-scene="3"] .tag-ai{opacity:1;transform:translateY(0)}
+.aj-story[data-scene="2"] .aj-scene-halo{background:radial-gradient(circle,#6e69ff3b,transparent 68%)}
+.aj-story[data-scene="3"] .aj-scene-halo{background:radial-gradient(circle,#4bd9b42c,transparent 68%)}
+@media(max-width:760px){
+ .aj-story{height:360vh}.aj-story-pin{min-height:600px}
+ .aj-story-copy{left:7vw;top:15%;transform:none;width:86%;z-index:4}
+ .aj-story-copy h2{font-size:clamp(43px,13vw,66px);margin-bottom:12px}
+ .aj-story-copy p{font-size:11px;max-width:290px;margin:8px 0}
+ .aj-story-kicker{margin-bottom:12px}
+ .aj-story-link{margin-top:8px;font-size:10px}
+ .aj-scene{width:92vw;height:48vh;right:4vw;top:69%;transform:translateY(-50%)}
+ .aj-core{width:36vw}.ui-phone{width:30%;height:62%}.ui-browser{width:72%;height:55%}
+ .ui-dashboard{width:75%;height:48%}
+ .aj-story-top,.aj-story-bottom{left:6vw;right:6vw;font-size:8px}
+ .aj-story-top{top:18px}.aj-story-bottom{bottom:18px}
+}
+@media(prefers-reduced-motion:reduce){.aj-story{height:auto}.aj-story-pin{position:relative;height:800px}.aj-story-steps{display:none}.aj-interface{opacity:1;transform:none}}
+
+
+/* AJ CREATORS — unified cinematic art direction */
+:root{
+ --aj-night:#09080c;--aj-ink:#f8f1eb;--aj-dim:#b9aaa2;--aj-copper:#e38b61;
+ --aj-lilac:#a995ff;--aj-mint:#76dfc9;--aj-hairline:#ffffff20;
+}
+html{background:var(--aj-night);scroll-behavior:smooth}
+body{
+ color:var(--aj-ink)!important;background:var(--aj-night)!important;
+ background-image:
+  radial-gradient(ellipse at 82% 8%,#69341e24,transparent 29%),
+  radial-gradient(ellipse at 8% 36%,#5d4b8420,transparent 32%),
+  radial-gradient(ellipse at 84% 76%,#22594d18,transparent 28%),
+  linear-gradient(180deg,#0a080a,#0b0a10 48%,#08090c)!important;
+}
+body:before{opacity:.13!important;background-size:74px 74px!important}
+.topbar{
+ background:#09080ce8!important;backdrop-filter:blur(22px) saturate(130%)!important;
+ border-bottom:1px solid #ffffff16!important;
+}
+.brand-name{color:#fff!important}
+.navlinks a{color:#c9bfba!important;transition:color .25s,opacity .25s}
+.navlinks a:hover{color:var(--aj-copper)!important}
+.hero{
+ min-height:100svh!important;display:flex;align-items:center;
+ background:
+  radial-gradient(ellipse at 78% 48%,#8a472a35,transparent 34%),
+  radial-gradient(ellipse at 8% 8%,#51427c28,transparent 32%),
+  #0b090c!important;
+ overflow:hidden;
+}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.15;
+ background:linear-gradient(110deg,transparent 35%,#fff 50%,transparent 65%);
+ transform:translateX(-120%);animation:ajLightSweep 9s 2s ease-in-out infinite}
+@keyframes ajLightSweep{0%,55%{transform:translateX(-120%)}80%,100%{transform:translateX(120%)}}
+.hero-copy-block{position:relative;z-index:2}
+.hero h1{font-size:clamp(3.5rem,8.5vw,8rem)!important;line-height:.91!important;max-width:900px}
+.hero-copy{max-width:540px;color:#d0c2bb!important}
+.hero-art{filter:saturate(.92)}
+.ticker{background:#171015!important;border-block:1px solid #ffffff17!important;color:#e5b49a!important}
+.ticker-track{letter-spacing:.18em!important}
+.section,.contact-section{
+ padding-top:clamp(90px,12vw,170px)!important;
+ padding-bottom:clamp(90px,12vw,170px)!important;
+ background:transparent!important;position:relative;isolation:isolate;
+}
+.section:before,.contact-section:before{
+ content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;
+ background:radial-gradient(ellipse at 50% 0%,#ffffff08,transparent 62%);
+}
+.section.alt{
+ background:linear-gradient(180deg,#ffffff04,#ffffff00 80%)!important;
+ border-block:1px solid #ffffff0d;
+}
+.section-head{max-width:800px;margin-bottom:58px!important}
+.section-head h2,.contact-copy h2{
+ font-size:clamp(2.8rem,6.4vw,6rem)!important;line-height:.98!important;
+ letter-spacing:-.075em!important;color:#f8f1eb!important;
+}
+.section-head p,.contact-copy p{color:#b9aaa2!important}
+.kicker,.eyebrow{color:#e59a74!important;letter-spacing:.2em!important}
+.service-layout{gap:clamp(30px,6vw,90px)!important}
+.service-tabs{border-top:1px solid var(--aj-hairline)!important}
+.service-tab{border-bottom:1px solid var(--aj-hairline)!important;color:#c6b9b1!important}
+.service-tab.active{color:#fff!important;background:linear-gradient(90deg,#d77e5220,transparent)!important}
+.service-display{
+ min-height:390px!important;border:1px solid #ffffff1c!important;border-radius:28px!important;
+ background:
+  radial-gradient(ellipse at 80% 20%,#b46c4c25,transparent 48%),
+  linear-gradient(145deg,#21191b,#111018)!important;
+ box-shadow:0 35px 100px #0007!important;padding:clamp(28px,4vw,56px)!important;
+}
+.service-number{color:#e99a73!important}
+.service-points li:before{background:var(--aj-copper)!important}
+.work-grid{gap:22px!important}
+.work-card{
+ overflow:hidden!important;border-radius:25px!important;
+ border:1px solid #ffffff1c!important;
+ background:linear-gradient(145deg,#20191c,#101018)!important;
+ box-shadow:0 30px 90px #0006!important;
+ transition:transform .65s cubic-bezier(.2,.8,.2,1),border-color .4s,box-shadow .4s!important;
+}
+.work-card:hover{transform:translateY(-12px) scale(1.012)!important;border-color:#d88d6b80!important;box-shadow:0 40px 110px #0009!important}
+.work-art{min-height:300px!important;overflow:hidden}
+.work-art:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 50%,#09080c66)}
+.work-meta{padding:24px 28px 30px!important}
+.work-meta .label{color:#e99b75!important;letter-spacing:.18em!important}
+.about-band{
+ padding:clamp(36px,6vw,82px)!important;border-radius:30px!important;
+ background:
+  radial-gradient(ellipse at 10% 10%,#8a553b32,transparent 42%),
+  linear-gradient(125deg,#21191d,#101019 65%,#14201e)!important;
+ border:1px solid #ffffff20!important;box-shadow:0 40px 100px #0006!important;
+}
+.about-tags span,.about-tags .tag{border:1px solid #ffffff26!important;background:#ffffff09!important;color:#eadbd2!important}
+.pricing-grid{align-items:stretch!important;gap:18px!important}
+.price-card{
+ border:1px solid #ffffff20!important;border-radius:25px!important;
+ background:linear-gradient(155deg,#21191d,#101018)!important;
+ box-shadow:0 25px 75px #0006!important;padding:clamp(26px,3vw,40px)!important;
+}
+.price-card.featured{
+ background:radial-gradient(ellipse at 80% 0%,#98614440,transparent 50%),linear-gradient(155deg,#30201f,#141019)!important;
+ border-color:#d9916b80!important;transform:translateY(-12px);
+}
+.price{color:#f2ad88!important}
+.steps{counter-reset:ajstep;gap:0!important}
+.step{padding:30px!important;border-top:1px solid #ffffff25!important;background:transparent!important}
+.step-num{color:#e99b75!important;font-size:12px!important;letter-spacing:.16em}
+.contact-section{
+ background:radial-gradient(ellipse at 80% 50%,#70452d26,transparent 42%),#0b090d!important;
+ border-top:1px solid #ffffff16;
+}
+.contact-method{border-bottom:1px solid #ffffff20!important;padding:18px 0!important}
+form,.lead-form{
+ background:linear-gradient(145deg,#21191d,#101018)!important;border:1px solid #ffffff20!important;
+ border-radius:28px!important;padding:clamp(24px,4vw,48px)!important;box-shadow:0 35px 100px #0007!important;
+}
+input,textarea,select{
+ background:#ffffff08!important;border:1px solid #ffffff24!important;color:#fff!important;
+ border-radius:14px!important;padding:15px 16px!important;
+}
+input::placeholder,textarea::placeholder{color:#958981!important}
+input:focus,textarea:focus,select:focus{border-color:#dc926e!important;box-shadow:0 0 0 4px #dc926e20!important}
+footer{background:#07070a!important;border-top:1px solid #ffffff1a!important}
+footer a{color:#c6b8af!important}
+footer a:hover{color:#e99b75!important}
+.button.primary,.nav-cta{
+ background:linear-gradient(110deg,#e49a70,#bd6f50)!important;color:#170d0b!important;
+ border:0!important;box-shadow:0 12px 38px #c87c5540!important;font-weight:700!important;
+}
+.button.ghost{border:1px solid #ffffff40!important;background:#ffffff08!important;color:#fff!important}
+.text-link{color:#e9a17c!important}
+::selection{background:#e18b63;color:#160d0b}
+@media(max-width:760px){
+ .hero{padding-top:110px!important}
+ .hero h1{font-size:clamp(3.1rem,15vw,5.3rem)!important}
+ .section,.contact-section{padding-top:82px!important;padding-bottom:82px!important}
+ .service-display{min-height:0!important}
+ .price-card.featured{transform:none}
+ .work-art{min-height:230px!important}
+}
+
+/* Native pointer only — custom mouse circle removed */
+#aj-cursor,.cursor-glow{display:none!important}body{cursor:auto!important}a,button{cursor:pointer!important}
+
+/* AJ MOBILE PHONE EXPERIENCE CSS */
+.aj-mobile-experience{display:none}
+@media(max-width:760px){
+ body{background:#08080d!important}
+ body>.cursor-glow,#aj-progress,#aj-noise{display:none!important}
+ .aj-mobile-experience{display:block;position:relative;background:#09090e;color:#f8f1eb;min-height:100svh}
+ /* On mobile, the site becomes a native-feeling full-screen app journey. */
+ body>.topbar,body>header,body>nav{display:none!important}
+ body .hero,body #aj-story,body #services,body #work,body #about,body #pricing,body #process,body #contact,
+ body .ticker,body footer{display:none!important}
+ .aj-lock-screen{position:fixed;inset:0;z-index:10050;display:flex;flex-direction:column;justify-content:space-between;
+  padding:24px 24px max(26px,env(safe-area-inset-bottom));overflow:hidden;
+  background:radial-gradient(ellipse at 50% 38%,#5b3026 0%,#24151a 36%,#0a0a12 78%)}
+ .aj-lock-wallpaper{position:absolute;inset:0;opacity:.45;background:
+  radial-gradient(circle at 50% 40%,#d08a6428,transparent 36%),
+  repeating-linear-gradient(135deg,transparent 0 28px,#ffffff05 29px 30px)}
+ .aj-lock-status,.aj-lock-content,.aj-unlock,.aj-lock-bottom{position:relative;z-index:1}
+ .aj-lock-status{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.2em;color:#e8d5c9}
+ .aj-lock-content{text-align:center;margin:auto 0}
+ .aj-lock-date{font-size:9px;letter-spacing:.24em;color:#e5a17d;margin-bottom:18px}
+ .aj-lock-time{font-size:clamp(76px,23vw,120px);font-weight:300;letter-spacing:-.09em;line-height:1}
+ .aj-lock-greeting{font-size:20px;line-height:1.25;color:#e8d9d1;margin-top:24px}
+ .aj-lock-greeting em{font-family:Georgia,serif;color:#e99a72}
+ .aj-lock-mark{margin:42px auto 0;width:78px;height:78px;border-radius:25px;display:grid;place-items:center;position:relative;
+  font-size:33px;font-weight:900;letter-spacing:-.12em;color:#fff;background:linear-gradient(145deg,#e79b72,#75402f 65%,#21151b);
+  box-shadow:0 16px 55px #0008,0 0 55px #df8b6228,inset 0 1px 0 #ffffff66}
+ .aj-lock-mark span{position:absolute;right:9px;top:7px;font-size:12px;color:#ffe3cf}
+ .aj-unlock{align-self:center;border:1px solid #ffffff40;background:#ffffff12;color:#fff;padding:15px 22px;border-radius:40px;
+  font-size:12px;letter-spacing:.04em;backdrop-filter:blur(14px);box-shadow:0 10px 40px #0005}
+ .aj-unlock-icon{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#e79a70;color:#1a0f0b;margin-right:8px}
+ .aj-lock-bottom{display:flex;justify-content:space-between;font-size:8px;letter-spacing:.16em;color:#d6bfb3a8}
+ .aj-lock-screen.aj-unlocking{animation:ajUnlock .9s cubic-bezier(.7,0,.2,1) forwards;transform-origin:50% 100%}
+ @keyframes ajUnlock{to{transform:translateY(-105%) scale(.94);opacity:0;filter:blur(14px)}}
+ .aj-mobile-app{min-height:100svh;opacity:0;transform:scale(.97);transition:opacity .7s,transform .7s}
+ .aj-mobile-app.aj-open{opacity:1;transform:scale(1)}
+ .aj-mobile-header{height:62px;position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;
+  padding:0 20px;background:#09090ee8;border-bottom:1px solid #ffffff18;backdrop-filter:blur(18px)}
+ .aj-mobile-brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:#fff;font-size:10px;letter-spacing:.14em}
+ .aj-mobile-brand b{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#e79a70,#70432f);font-size:16px;letter-spacing:-.1em}
+ .aj-mobile-live{font-size:8px;letter-spacing:.13em;color:#bdaea6}.aj-mobile-live i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#7ce0c5;margin-right:6px}
+ .aj-mobile-screens{height:calc(100svh - 62px);overflow-y:auto;overscroll-behavior-y:contain;scroll-snap-type:y mandatory;scroll-behavior:smooth;
+  scrollbar-width:none;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+ .aj-mobile-screens::-webkit-scrollbar{display:none}
+ .aj-mobile-screen{min-height:calc(100svh - 62px);scroll-snap-align:start;scroll-snap-stop:always;position:relative;overflow:hidden;
+  padding:38px 23px 45px;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid #ffffff13;
+  background:radial-gradient(ellipse at 90% 10%,#8e503326,transparent 38%),#0c0b11}
+ .aj-mobile-screen:nth-child(even){background:radial-gradient(ellipse at 8% 85%,#51418425,transparent 40%),#0b0c12}
+ .aj-mobile-eyebrow{font-size:9px;letter-spacing:.2em;color:#e99a72;margin-bottom:20px}
+ .aj-mobile-heading{font-size:clamp(43px,12vw,62px);line-height:.94;letter-spacing:-.075em;font-weight:650}
+ .aj-mobile-heading em{font-family:Georgia,serif;font-weight:400;color:#e99a72}
+ .aj-mobile-screen>p{font-size:12px;line-height:1.7;color:#c2b4ac;max-width:310px;margin:16px 0 24px}
+ .aj-mobile-project-stack{display:grid;gap:12px;margin-top:5px}
+ .aj-project-visual{min-height:125px;border-radius:20px;padding:17px 18px;position:relative;overflow:hidden;border:1px solid #ffffff26;box-shadow:0 15px 40px #0005;animation:ajCardFloat 6s ease-in-out infinite}
+ .aj-project-visual:nth-child(2){animation-delay:-2s}.aj-project-visual:nth-child(3){animation-delay:-4s}
+ @keyframes ajCardFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+ .aj-project-visual>span{font-size:7px;letter-spacing:.16em;opacity:.8;display:block;margin-bottom:12px}
+ .aj-project-visual>b{font-size:22px;letter-spacing:-.05em;display:block;line-height:1}
+ .aj-project-visual>small{font-size:9px;opacity:.8;display:block;margin-top:7px}
+ .aj-project-farm{background:radial-gradient(circle at 85% 35%,#c8a35a66,transparent 35%),linear-gradient(120deg,#273b2d,#15251e)}
+ .aj-farm-orb{position:absolute;right:22px;top:22px;width:74px;height:74px;border-radius:50%;display:grid;place-items:center;font-size:35px;color:#e8d6a0;background:radial-gradient(circle at 35% 30%,#e8d9a4,#66865a 55%,#243b2c);box-shadow:0 10px 30px #0006}
+ .aj-project-dashboard{background:radial-gradient(circle at 85% 30%,#7468c766,transparent 35%),linear-gradient(120deg,#29223d,#151421)}
+ .aj-mini-chart{position:absolute;right:16px;bottom:18px;height:42px;display:flex;align-items:end;gap:4px}
+ .aj-mini-chart i{width:7px;border-radius:4px 4px 0 0;background:#a99bff;height:35%}.aj-mini-chart i:nth-child(2n){height:75%}.aj-mini-chart i:nth-child(3n){height:55%}
+ .aj-project-notes{background:radial-gradient(circle at 90% 40%,#e18a6b55,transparent 36%),linear-gradient(120deg,#342229,#17131b)}
+ .aj-note-lines{position:absolute;right:20px;top:45px;width:90px;height:54px;border-top:1px solid #ffffff55;border-bottom:1px solid #ffffff55}
+ .aj-note-lines:after{content:"";display:block;margin-top:16px;width:70%;border-top:1px solid #ffffff55}
+ .aj-mobile-scroll-hint{display:flex;justify-content:space-between;margin-top:18px;font-size:8px;letter-spacing:.17em;color:#b8aaa2}
+ .aj-mobile-scroll-hint span{color:#e99a72;font-size:17px}
+ .aj-need-list{border-top:1px solid #ffffff2a;margin-top:8px}
+ .aj-need-list div{display:flex;align-items:center;gap:13px;padding:17px 0;border-bottom:1px solid #ffffff22}
+ .aj-need-list span{font-size:9px;color:#e99a72}.aj-need-list b{font-size:14px;font-weight:500;flex:1}.aj-need-list i{font-style:normal;color:#e99a72}
+ .aj-mobile-note{font-size:8px;letter-spacing:.13em;color:#ad9e97;margin-top:22px;line-height:1.7}
+ .aj-plan-timeline{margin-top:12px;border-left:1px solid #e99a7266;padding-left:20px}
+ .aj-plan-timeline>div{display:flex;gap:15px;position:relative;padding:0 0 23px}
+ .aj-plan-timeline>div:before{content:"";position:absolute;left:-25px;top:4px;width:9px;height:9px;border-radius:50%;background:#e99a72;box-shadow:0 0 15px #e99a7280}
+ .aj-plan-timeline>div>span{font-size:9px;color:#e99a72;padding-top:2px}
+ .aj-plan-timeline section{display:flex;flex-direction:column;gap:5px}.aj-plan-timeline b{font-size:15px}.aj-plan-timeline small{font-size:10px;color:#b9aaa2}
+ .aj-plan-stamp{border:1px solid #ffffff25;border-radius:12px;padding:13px;text-align:center;font-size:8px;letter-spacing:.14em;color:#e8b397}
+ .aj-cost-card{padding:24px;border-radius:24px;border:1px solid #ffffff2b;background:linear-gradient(145deg,#30201f,#13111a);box-shadow:0 25px 65px #0006;margin-top:6px}
+ .aj-cost-card>span{font-size:8px;letter-spacing:.17em;color:#e99a72}
+ .aj-cost-card>b{display:block;font-size:38px;line-height:.98;letter-spacing:-.06em;margin:20px 0}
+ .aj-cost-line{height:1px;background:#ffffff25;margin:20px 0}.aj-cost-line i{display:block;width:55%;height:2px;background:#e99a72}
+ .aj-cost-card small{font-size:9px;color:#c1b1a8}
+ .aj-mobile-cta{display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:#1a0d09;background:linear-gradient(110deg,#efa982,#c97856);border-radius:40px;padding:15px 18px;font-size:11px;font-weight:700;margin-top:22px}
+ .aj-mobile-cta b{font-size:17px}
+ .aj-cost-foot{font-size:8px;letter-spacing:.14em;color:#b9aaa2;margin-top:18px}
+ .aj-idea-orbit{position:relative;width:230px;height:230px;margin:20px auto 16px;border:1px solid #e99a7244;border-radius:50%;display:grid;place-items:center}
+ .aj-idea-orbit:before,.aj-idea-orbit:after{content:"";position:absolute;inset:22px;border:1px solid #ffffff1b;border-radius:50%;transform:rotate(35deg) scaleX(.55)}
+ .aj-idea-orbit:after{transform:rotate(-35deg) scaleX(.55)}
+ .aj-idea-core{width:90px;height:90px;border-radius:28px;display:grid;place-items:center;background:linear-gradient(145deg,#eaa078,#60372e);font-size:38px;font-weight:900;letter-spacing:-.12em;box-shadow:0 0 50px #e99a7244}
+ .aj-idea-chip{position:absolute;display:grid;place-items:center;width:42px;height:42px;border:1px solid #ffffff3a;border-radius:50%;background:#17131a;color:#f5c4a6;font-size:9px;letter-spacing:.08em}
+ .chip-one{top:0;left:94px}.chip-two{right:0;top:92px}.chip-three{bottom:0;left:92px}.chip-four{left:0;top:92px}
+ .aj-idea-tags{display:flex;flex-wrap:wrap;gap:7px;justify-content:center}
+ .aj-idea-tags span{font-size:7px;letter-spacing:.1em;padding:8px 10px;border:1px solid #ffffff28;border-radius:30px;color:#d6c4ba}
+ .aj-idea-cta{margin-top:24px}
+ .aj-mobile-contact-link{display:flex;justify-content:space-between;align-items:center;padding:17px 0;border-bottom:1px solid #ffffff25;color:#f5e9e2;text-decoration:none;font-size:12px}
+ .aj-mobile-contact-link b{color:#e99a72;font-size:17px}
+ .aj-mobile-footer-mark{margin:50px auto 15px;width:70px;height:70px;border-radius:23px;display:grid;place-items:center;background:linear-gradient(145deg,#e99a72,#60372e);font-size:32px;font-weight:900;letter-spacing:-.12em;position:relative}
+ .aj-mobile-footer-mark span{position:absolute;right:8px;top:6px;font-size:11px}
+ .aj-screen-contact>small{text-align:center;font-size:8px;letter-spacing:.16em;color:#b9aaa2}
+ .aj-mobile-dock{position:fixed;z-index:60;bottom:0;left:0;right:0;padding:9px 6px max(9px,env(safe-area-inset-bottom));display:flex;justify-content:space-around;
+  background:#0a090feF;border-top:1px solid #ffffff20;backdrop-filter:blur(22px)}
+ .aj-mobile-dock a{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#948982;font-size:8px;min-width:52px}
+ .aj-mobile-dock a span{font-size:16px;line-height:18px}
+ .aj-mobile-dock a.active{color:#efa982}
+}
+
+
+/* AJ 3D PROJECT GALLERY + IMMERSIVE DETAILS */
+.aj-project-visual{appearance:none;text-align:left;width:100%;font:inherit;color:inherit;cursor:pointer}
+.aj-project-open{position:relative;isolation:isolate;transform-style:preserve-3d;perspective:900px}
+.aj-project-open:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.7;
+ background:radial-gradient(circle at 72% 34%,#ffffff22,transparent 34%);transition:transform .5s,opacity .5s}
+.aj-project-open:hover:before{transform:scale(1.35) rotate(12deg);opacity:1}
+.aj-project-open-icon{position:absolute;right:18px;bottom:16px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;
+ border:1px solid #ffffff55;background:#ffffff12;color:#fff;font-style:normal;transition:transform .3s,background .3s}
+.aj-project-open:hover .aj-project-open-icon{transform:rotate(45deg) scale(1.1);background:#ffffff28}
+.aj-project-modal{position:fixed;inset:0;z-index:12000;display:grid;place-items:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .45s,visibility .45s}
+.aj-project-modal.is-open{opacity:1;visibility:visible}
+.aj-modal-backdrop{position:absolute;inset:0;background:#05050bea;backdrop-filter:blur(20px)}
+.aj-modal-panel{position:relative;width:min(1040px,100%);max-height:min(90vh,850px);overflow:auto;border:1px solid #ffffff28;border-radius:30px;
+ background:radial-gradient(ellipse at 78% 10%,#7e4c3b55,transparent 42%),linear-gradient(145deg,#1d171a,#0d0c13);
+ box-shadow:0 45px 150px #000c;padding:clamp(24px,5vw,55px);transform:translateY(30px) scale(.96);transition:transform .55s cubic-bezier(.2,.8,.2,1)}
+.aj-project-modal.is-open .aj-modal-panel{transform:translateY(0) scale(1)}
+.aj-modal-close{position:absolute;right:20px;top:18px;width:42px;height:42px;border-radius:50%;border:1px solid #ffffff35;background:#ffffff0c;color:#fff;font-size:27px;cursor:pointer}
+.aj-modal-kicker{font-size:9px;letter-spacing:.2em;color:#e9a17c;margin-bottom:22px}
+.aj-modal-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:center}
+.aj-modal-copy h2{font-size:clamp(36px,5vw,62px);line-height:.95;letter-spacing:-.07em;margin:0 0 17px}
+.aj-modal-copy p{color:#c8b9b0;line-height:1.7;font-size:13px;max-width:340px}
+.aj-modal-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
+.aj-modal-tags span{font-size:8px;letter-spacing:.1em;padding:8px 11px;border:1px solid #ffffff2a;border-radius:30px;color:#e7d7ce}
+.aj-modal-controls{display:flex;align-items:center;gap:18px;margin-top:30px}
+.aj-modal-controls button{width:40px;height:40px;border-radius:50%;border:1px solid #ffffff40;background:#ffffff0b;color:#fff;font-size:18px;cursor:pointer}
+.aj-modal-controls span{font-size:9px;letter-spacing:.15em;color:#d9b6a3}
+.aj-modal-disclaimer{display:block;margin-top:20px;color:#93847c;font-size:9px;line-height:1.6}
+.aj-phone-gallery{height:560px;position:relative;display:grid;place-items:center;perspective:1200px;overflow:hidden}
+.aj-gallery-orbit{position:absolute;width:440px;height:440px;border-radius:50%;border:1px solid #e6a07c35;transform:rotateX(67deg) rotateZ(-20deg);box-shadow:0 0 70px #d68b6220,inset 0 0 70px #d68b6210;animation:ajGalleryOrbit 18s linear infinite}
+.aj-gallery-orbit:before,.aj-gallery-orbit:after{content:"";position:absolute;inset:32px;border:1px solid #ffffff18;border-radius:50%;transform:rotate(45deg) scaleX(.6)}
+.aj-gallery-orbit:after{transform:rotate(-45deg) scaleX(.6)}
+@keyframes ajGalleryOrbit{to{transform:rotateX(67deg) rotateZ(340deg)}}
+.aj-phone-3d{width:255px;height:515px;position:relative;z-index:2;transform:rotateY(-15deg) rotateX(5deg) rotateZ(-3deg);transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(30px 40px 35px #0009)}
+.aj-phone-3d:hover{transform:rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(-8px)}
+.aj-phone-frame{position:absolute;inset:0;border-radius:39px;padding:9px;background:linear-gradient(135deg,#f2d5c1,#5c4c49 25%,#17151b 55%,#b18b79);box-shadow:inset 0 0 0 2px #ffffff65,inset -7px -8px 16px #0009}
+.aj-phone-screen{height:100%;border-radius:31px;overflow:hidden;background:#f7f5ef;color:#24231f;position:relative;padding:13px 13px 48px}
+.aj-shot-status{height:17px;display:flex;justify-content:space-between;font-size:8px;font-weight:700;color:#28251f}
+.aj-shot-content{height:calc(100% - 22px);overflow:hidden}
+.aj-shot-nav{position:absolute;bottom:0;left:0;right:0;height:43px;background:#fff;display:flex;justify-content:space-around;align-items:center;border-top:1px solid #e8e3db;color:#4b6144}
+.aj-shot-nav i{font-style:normal;font-size:15px}
+.aj-shot-brand{display:flex;align-items:center;justify-content:space-between;margin:12px 0 18px}
+.aj-shot-brand b{font-size:15px;color:#263d2c}.aj-shot-brand small{font-size:8px;color:#887f71}
+.aj-shot-hero{border-radius:17px;padding:18px 14px;background:linear-gradient(135deg,#dfe9d5,#b7c99e);min-height:142px;position:relative;overflow:hidden}
+.aj-shot-hero small{font-size:7px;letter-spacing:.15em;color:#536447}.aj-shot-hero b{display:block;font-size:22px;line-height:1.02;margin-top:10px;color:#263d2c;max-width:135px}
+.aj-shot-hero i{position:absolute;right:-5px;bottom:-10px;font-size:78px;color:#70875c88;font-style:normal}
+.aj-shot-section-title{font-size:11px;font-weight:800;margin:18px 0 10px}
+.aj-shot-products{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.aj-shot-product{border-radius:12px;background:#fff;padding:8px;box-shadow:0 3px 12px #0000000a}
+.aj-shot-product .produce{height:63px;border-radius:9px;display:grid;place-items:center;font-size:28px;background:linear-gradient(135deg,#dce7cf,#a9be8c)}
+.aj-shot-product b{display:block;font-size:8px;margin-top:7px}.aj-shot-product small{font-size:7px;color:#7d776e}
+.aj-shot-action{margin-top:13px;background:#35553b;color:white;border-radius:30px;text-align:center;padding:11px;font-size:9px;font-weight:700}
+.aj-shot-search{background:#ecebe4;border-radius:9px;padding:9px;color:#89857a;font-size:8px;margin:10px 0}
+.aj-shot-cart{border-radius:12px;background:#fff;padding:12px;margin-top:12px}
+.aj-shot-cart-row{display:flex;justify-content:space-between;font-size:8px;padding:9px 0;border-bottom:1px solid #eee}
+.aj-shot-cart-total{display:flex;justify-content:space-between;font-size:11px;font-weight:800;margin-top:12px}
+.aj-shot-order{padding:12px;border-radius:13px;background:#fff;margin-top:12px}
+.aj-shot-order .status{display:inline-block;background:#e2f0dc;color:#41613b;padding:6px 8px;border-radius:20px;font-size:7px}
+.aj-shot-order b{display:block;font-size:13px;margin:14px 0 6px}.aj-shot-order p{font-size:8px;color:#777}
+.aj-gallery-float{position:absolute;z-index:3;padding:10px 14px;border-radius:30px;background:#ffffff12;border:1px solid #ffffff35;backdrop-filter:blur(12px);font-size:8px;letter-spacing:.15em;color:#f1d5c5;animation:ajFloatTag 5s ease-in-out infinite}
+.float-top{top:16%;right:4%}.float-bottom{bottom:15%;left:3%;animation-delay:-2.5s}
+@keyframes ajFloatTag{50%{transform:translateY(-10px) rotate(2deg)}}
+@media(max-width:760px){
+ .aj-project-modal{padding:0;align-items:end}
+ .aj-modal-panel{width:100%;max-height:94svh;border-radius:25px 25px 0 0;padding:26px 20px max(28px,env(safe-area-inset-bottom))}
+ .aj-modal-layout{grid-template-columns:1fr;gap:8px}
+ .aj-modal-copy h2{font-size:36px;margin-bottom:9px}
+ .aj-modal-copy p{font-size:11px;margin:0}
+ .aj-modal-tags{margin-top:12px}
+ .aj-modal-controls{margin-top:12px}
+ .aj-modal-disclaimer{margin-top:8px}
+ .aj-phone-gallery{height:460px;margin-top:0}
+ .aj-phone-3d{width:210px;height:420px}
+ .aj-gallery-orbit{width:350px;height:350px}
+ .float-top{right:0;top:8%}.float-bottom{left:0;bottom:8%}
+}
+
+
+/* Additional AJ portfolio projects */
+.aj-project-school{background:radial-gradient(circle at 82% 32%,#f1bd7a66,transparent 36%),linear-gradient(120deg,#3b3024,#1d1a20);color:#fff;text-decoration:none}
+.aj-project-android{background:radial-gradient(circle at 82% 30%,#7bc5a866,transparent 36%),linear-gradient(120deg,#1d3b34,#111c20);color:#fff;text-decoration:none}
+.aj-school-crest,.aj-android-symbol{position:absolute;right:22px;top:25px;width:66px;height:66px;border-radius:20px;display:grid;place-items:center;font-size:34px;font-weight:900;color:#fff5e8;background:linear-gradient(145deg,#e7b879,#7b5033);box-shadow:0 12px 30px #0006;transform:rotate(9deg)}
+.aj-android-symbol{background:linear-gradient(145deg,#9be3b1,#28795b);color:#0c3026;border-radius:50%}
+.aj-work-link{display:block;color:inherit;text-decoration:none;height:100%}
+.aj-school-art,.aj-android-art{display:grid;place-items:center;min-height:310px;overflow:hidden}
+.aj-school-art{background:radial-gradient(ellipse at 50% 10%,#e2a96966,transparent 55%),linear-gradient(145deg,#30231e,#17131a)}
+.aj-school-screen{width:76%;height:245px;padding:19px;border:1px solid #ffffff3b;border-radius:17px;background:linear-gradient(145deg,#fff5e8,#e7d8c4);color:#30241e;box-shadow:0 30px 70px #0008;transform:rotate(-5deg);transition:transform .6s}
+.aj-work-link:hover .aj-school-screen{transform:rotate(0) translateY(-8px) scale(1.03)}
+.aj-school-top{font-size:10px;letter-spacing:.18em;font-weight:900;display:flex;justify-content:space-between;color:#74503a}
+.aj-school-crest{position:static;width:42px;height:42px;border-radius:13px;font-size:21px;margin:13px 0}
+.aj-school-screen>b{display:block;font-size:28px;line-height:.95;letter-spacing:-.06em}
+.aj-school-screen>small{display:block;font-size:7px;letter-spacing:.13em;margin-top:10px;color:#8b6d58}
+.aj-school-pills{display:flex;gap:6px;margin-top:14px}.aj-school-pills i{font-style:normal;font-size:7px;padding:6px 8px;border-radius:20px;background:#e1d0bb;color:#644b3b}
+.aj-android-art{background:radial-gradient(ellipse at 50% 10%,#7bc5a844,transparent 55%),linear-gradient(145deg,#152b29,#11141b)}
+.aj-android-screen{width:78%;height:250px;padding:18px;border:1px solid #ffffff3a;border-radius:17px;background:linear-gradient(145deg,#253b37,#121f20);box-shadow:0 30px 70px #0008;transform:rotate(4deg);transition:transform .6s}
+.aj-work-link:hover .aj-android-screen{transform:rotate(0) translateY(-8px) scale(1.03)}
+.aj-android-top{display:flex;justify-content:space-between;font-size:11px;color:#f2f7ee}
+.aj-android-feature{margin-top:22px;padding:17px;border-radius:12px;background:linear-gradient(135deg,#c1e7d1,#82bda1);color:#173c30}
+.aj-android-feature small{font-size:6px;letter-spacing:.1em}.aj-android-feature b{display:block;font-size:23px;line-height:.98;margin-top:10px}
+.aj-android-feed{display:grid;gap:7px;margin-top:12px}.aj-android-feed i{height:12px;border-radius:5px;background:#ffffff18}
+.aj-github-cta{display:inline-block;margin-top:10px;font-size:9px;letter-spacing:.15em;color:#e99b75}
+.aj-work-link:hover .aj-github-cta{letter-spacing:.22em}
+
+
+/* Jaanu's Farm repository showcase */
+.aj-farm-repo-art{min-height:330px;display:grid;place-items:center;overflow:hidden;
+ background:radial-gradient(ellipse at 50% 15%,#d2b76b66,transparent 48%),linear-gradient(145deg,#1c3025,#10191a)}
+.aj-farm-repo-phone{width:205px;height:285px;border-radius:25px;padding:13px 13px 34px;position:relative;
+ background:linear-gradient(145deg,#f8f3e8,#d8e1ca);color:#263b2c;box-shadow:0 30px 75px #0009;
+ border:5px solid #a5a79a;transform:rotate(-7deg) perspective(700px) rotateY(-12deg);
+ transition:transform .65s cubic-bezier(.2,.8,.2,1)}
+.aj-work-link:hover .aj-farm-repo-phone{transform:rotate(0) perspective(700px) rotateY(0) translateY(-8px) scale(1.04)}
+.aj-farm-repo-status{display:flex;justify-content:space-between;font-size:7px;font-weight:800}
+.aj-farm-repo-brand{font-size:14px;font-weight:900;margin:13px 0 10px}
+.aj-farm-repo-brand small{display:block;font-size:6px;letter-spacing:.16em;color:#8a956d;margin-top:3px}
+.aj-farm-repo-hero{position:relative;border-radius:13px;padding:13px;background:linear-gradient(135deg,#e2ebd4,#b5c99d);min-height:115px;overflow:hidden}
+.aj-farm-repo-hero small{font-size:5px;letter-spacing:.12em;color:#5b704c}
+.aj-farm-repo-hero b{display:block;font-size:20px;line-height:.98;margin-top:8px;letter-spacing:-.06em}
+.aj-farm-repo-hero i{position:absolute;right:8px;bottom:5px;font-size:38px;font-style:normal;opacity:.8}
+.aj-farm-repo-products{display:flex;gap:8px;margin-top:10px}
+.aj-farm-repo-products span{flex:1;border-radius:9px;background:#fff;padding:7px;text-align:center;font-size:19px}
+.aj-farm-repo-products b{display:block;font-size:7px}
+.aj-farm-repo-nav{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:12px;color:#526e50}
+
+
+.aj-work-explore{cursor:pointer;outline:none;transition:transform .35s ease,filter .35s ease}
+.aj-work-explore:hover,.aj-work-explore:focus-visible{transform:translateY(-6px);filter:brightness(1.06)}
+.aj-work-explore:focus-visible{box-shadow:0 0 0 3px #9caeff88;border-radius:20px}
+.aj-work-explore-label{display:inline-flex;margin-top:14px;color:#aab8ff;font:9px "DM Mono",monospace;letter-spacing:.14em;transition:letter-spacing .25s,color .25s}
+.aj-work-explore:hover .aj-work-explore-label{letter-spacing:.21em;color:var(--mint)}
+.aj-modal-repo-link{display:inline-flex;margin-top:16px;padding:11px 14px;border:1px solid #aab8ff66;border-radius:30px;color:#c4ceff;font:9px "DM Mono",monospace;letter-spacing:.12em;transition:background .2s,transform .2s}
+.aj-modal-repo-link:hover{background:#aab8ff18;transform:translateY(-2px)}
+.aj-modal-repo-link[hidden]{display:none}
+.aj-school-shot-hero{background:linear-gradient(135deg,#f4e2bb,#d9bb7d)}
+.aj-school-attendance{background:linear-gradient(135deg,#d9e8ff,#b7ccf2)}
+.aj-school-lesson .status{background:#e9edff;color:#5967af}
+.aj-nia-brand b{display:flex;align-items:center;gap:8px;color:#243629}
+.aj-nia-mark{width:24px;height:24px;border-radius:8px;background:#c5f18b;color:#18351b;display:grid;place-items:center;font-weight:900}
+.aj-nia-hero{background:linear-gradient(135deg,#d8f5b4,#b8e87e)}
+.aj-nia-hero b{color:#18351b}.aj-nia-hero i{color:#527d3d88}
+.aj-nia-story .status{background:#e8f3de;color:#486a3e}
+.aj-nia-topics{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}
+.aj-nia-topics span{padding:8px 10px;border-radius:99px;background:#e5f1dc;color:#345c38;font-size:8px;font-weight:800}
+.aj-nia-action{background:#355b3c}
+
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="wrap nav">
+  <a class="brand" href="#home" aria-label="AJ Creators home">
+   <img class="aj-mark-img" src="./aj-creators-professional-logo.png" alt="AJ Creators logo">
+   <span class="brand-name">AJ Creators<small>& CREATORS</small></span>
+  </a>
+  <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+   <a href="#services">Services</a><a href="#work">Selected work</a><a href="#about">Studio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-cta" href="#contact">Start a project <span>↗</span></a>
+  <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div class="hero-copy-block reveal">
+   <span class="eyebrow"><i></i> DIGITAL CRAFT · HYDERABAD / INDIA</span>
+   <h1>Big ideas.<br><span class="gradient">Beautifully built.</span></h1>
+   <p class="hero-copy">We turn business challenges into digital experiences people love to use. From your first app idea to a smarter way of running your business — let's make it real.</p>
+   <div class="hero-actions"><a class="button primary" href="#contact">Let's create something <span>↗</span></a><a class="button ghost" href="#work">Explore our work <span>↓</span></a></div>
+   <div class="hero-meta"><span>Apps that work harder</span><span>Websites with personality</span><span>Software built around you</span></div>
+  </div>
+  <div class="hero-art reveal" id="heroArt">
+   <div class="aura"></div><div class="orbit"><i class="orbit-dot"></i></div>
+   <div class="device-stage" id="deviceStage">
+    <div class="device"><div class="device-inner">
+     <div class="device-top"><div class="device-logo"><b>J</b> Studio / Dashboard</div><span class="device-pill">LIVE CONCEPT</span></div>
+     <div class="device-title">Your business,<br>in one place.</div><div class="device-sub">A clearer view of the things that move you forward.</div>
+     <div class="device-gradient"><small>BUSINESS OVERVIEW</small><strong>Good morning ✦</strong><small>Everything is looking connected.</small></div>
+     <div class="device-stats"><div class="device-stat"><small>ORDERS THIS WEEK</small><b>128</b></div><div class="device-stat"><small>GROWTH</small><b>+24%</b></div></div>
+     <div class="device-list"><div class="device-list-head"><span>Recent activity</span><span>•••</span></div><div class="device-row"><span>New customer order</span><b>Just now</b></div><div class="device-row"><span>Delivery scheduled</span><b>10:30 AM</b></div><div class="device-row"><span>Invoice generated</span><b>Today</b></div></div>
+    </div></div>
+   </div>
+   <div class="float-chip float-a">✦ Thoughtful by design<span>Every detail has a purpose</span></div>
+   <div class="float-chip float-b">⌘ From idea to impact<span>Plan · Design · Build · Launch</span></div>
+  </div>
+ </div>
+ <div class="scroll-cue">SCROLL TO EXPLORE</div>
+</section>
+
+<!-- AJ MOBILE PHONE EXPERIENCE START -->
+<div class="aj-mobile-experience" id="aj-mobile-experience">
+  <section class="aj-lock-screen" id="aj-lock-screen">
+    <div class="aj-lock-wallpaper"></div>
+    <div class="aj-lock-status"><span>AJ CREATORS</span><span>● ● ●  ▰</span></div>
+    <div class="aj-lock-content">
+      <div class="aj-lock-date">YOUR DIGITAL CREATIVE STUDIO</div>
+      <div class="aj-lock-time" id="aj-lock-time">09:41</div>
+      <div class="aj-lock-greeting">Ideas deserve<br><em>a beautiful screen.</em></div>
+      <div class="aj-lock-mark">AJ<span>✳</span></div>
+    </div>
+    <button class="aj-unlock" id="aj-unlock" type="button"><span class="aj-unlock-icon">↑</span> Tap to unlock AJ Creators</button>
+    <div class="aj-lock-bottom"><span>DESIGN · BUILD · CREATE</span><span>SWIPE UP TO EXPLORE</span></div>
+  </section>
+  <div class="aj-mobile-app" id="aj-mobile-app">
+    <header class="aj-mobile-header"><a href="#aj-mobile-projects" class="aj-mobile-brand"><b>AJ</b><span>CREATORS</span></a><span class="aj-mobile-live"><i></i> DIGITAL STUDIO</span></header>
+    <main class="aj-mobile-screens" id="aj-mobile-screens">
+      <section class="aj-mobile-screen aj-screen-projects" id="aj-mobile-projects" data-screen="01">
+        <div class="aj-mobile-eyebrow">01 / THE SHOWCASE</div>
+        <div class="aj-mobile-heading">Ideas made<br><em>visible.</em></div>
+        <p>Explore the digital experiences we can bring to life.</p>
+        <div class="aj-mobile-project-stack">
+          <button type="button" class="aj-project-visual aj-project-farm aj-project-open" data-project="farm" aria-label="Open Jaanu Farm's mobile app preview"><span>01 / MOBILE APP · TAP TO EXPLORE</span><b>Jaanu Farm's</b><small>Fresh. Local. Connected.</small><div class="aj-farm-orb">✳</div><i class="aj-project-open-icon">↗</i></button>
+          <button type="button" class="aj-project-visual aj-project-dashboard aj-project-open" data-project="dashboard" aria-label="Open business dashboard preview"><span>02 / BUSINESS SOFTWARE · TAP TO EXPLORE</span><b>One view.<br>More clarity.</b><div class="aj-mini-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><i class="aj-project-open-icon">↗</i></button>
+          <button type="button" class="aj-project-visual aj-project-notes aj-project-open" data-project="notes" aria-label="Open Secure Notes preview"><span>03 / PRODUCTIVITY · TAP TO EXPLORE</span><b>Secure Notes</b><small>Your thoughts, protected.</small><div class="aj-note-lines"></div><i class="aj-project-open-icon">↗</i></button>
+          <button type="button" class="aj-project-visual aj-project-school aj-project-open" data-project="school" aria-label="Explore ERS School app preview"><span>04 / EDUCATION · TAP TO EXPLORE</span><b>ERS School</b><small>School app · student life</small><div class="aj-school-crest">E</div><i class="aj-project-open-icon">↗</i></button>
+          <button type="button" class="aj-project-visual aj-project-android aj-project-open" data-project="android" aria-label="Explore Now in Android app preview"><span>05 / ANDROID · TAP TO EXPLORE</span><b>Now in Android</b><small>Stories, topics & updates</small><div class="aj-android-symbol">A</div><i class="aj-project-open-icon">↗</i></button>
+                  </div>
+        <div class="aj-mobile-scroll-hint">SCROLL TO DISCOVER <span>↓</span></div>
+      </section>
+      <section class="aj-mobile-screen aj-screen-required" id="aj-mobile-required" data-screen="02">
+        <div class="aj-mobile-eyebrow">02 / WHAT YOU NEED</div>
+        <div class="aj-mobile-heading">What do you<br><em>want to build?</em></div>
+        <p>Choose a starting point. We shape the right solution around your goals.</p>
+        <div class="aj-need-list">
+          <div><span>01</span><b>Mobile application</b><i>↗</i></div>
+          <div><span>02</span><b>Website / web platform</b><i>↗</i></div>
+          <div><span>03</span><b>Business dashboard</b><i>↗</i></div>
+          <div><span>04</span><b>AI & automation</b><i>↗</i></div>
+          <div><span>05</span><b>Custom software</b><i>↗</i></div>
+        </div>
+        <div class="aj-mobile-note">START WITH THE PROBLEM. WE'LL HELP WITH THE SOLUTION.</div>
+      </section>
+      <section class="aj-mobile-screen aj-screen-plans" id="aj-mobile-plans" data-screen="03">
+        <div class="aj-mobile-eyebrow">03 / THE APPROACH</div>
+        <div class="aj-mobile-heading">A clear plan.<br><em>Every step.</em></div>
+        <p>From first conversation to launch, your project moves with purpose.</p>
+        <div class="aj-plan-timeline">
+          <div><span>01</span><section><b>Discover</b><small>Understand your idea, users and goals.</small></section></div>
+          <div><span>02</span><section><b>Design</b><small>Shape the experience and technical plan.</small></section></div>
+          <div><span>03</span><section><b>Build</b><small>Develop, test and refine the product.</small></section></div>
+          <div><span>04</span><section><b>Launch</b><small>Deploy and support your next step.</small></section></div>
+        </div>
+        <div class="aj-plan-stamp">IDEA → DESIGN → BUILD → LAUNCH</div>
+      </section>
+      <section class="aj-mobile-screen aj-screen-cost" id="aj-mobile-cost" data-screen="04">
+        <div class="aj-mobile-eyebrow">04 / ESTIMATION COST</div>
+        <div class="aj-mobile-heading">Built around<br><em>your budget.</em></div>
+        <p>Every estimate starts with scope, features and complexity. No one-size-fits-all pricing.</p>
+        <div class="aj-cost-card">
+          <span>PROJECT ESTIMATE</span><b>Let's scope<br>your idea.</b>
+          <div class="aj-cost-line"><i></i></div>
+          <small>Features · Timeline · Platform · Support</small>
+          <a href="#contact" class="aj-mobile-cta">Request an estimate <b>↗</b></a>
+        </div>
+        <div class="aj-cost-foot">CLEAR SCOPE. TRANSPARENT ESTIMATE. NO SURPRISES.</div>
+      </section>
+      <section class="aj-mobile-screen aj-screen-ideas" id="aj-mobile-ideas" data-screen="05">
+        <div class="aj-mobile-eyebrow">05 / SMART IDEAS</div>
+        <div class="aj-mobile-heading">Think bigger.<br><em>Build smarter.</em></div>
+        <p>Bring us the rough idea. We'll help turn it into a useful digital product.</p>
+        <div class="aj-idea-orbit"><div class="aj-idea-core">AJ</div><span class="aj-idea-chip chip-one">AI</span><span class="aj-idea-chip chip-two">APP</span><span class="aj-idea-chip chip-three">WEB</span><span class="aj-idea-chip chip-four">UX</span></div>
+        <div class="aj-idea-tags"><span>CREATIVE THINKING</span><span>USEFUL TECHNOLOGY</span><span>REAL-WORLD IMPACT</span></div>
+        <a href="#contact" class="aj-mobile-cta aj-idea-cta">Let's build your idea <b>↗</b></a>
+      </section>
+      <section class="aj-mobile-screen aj-screen-contact" id="aj-mobile-contact" data-screen="06">
+        <div class="aj-mobile-eyebrow">06 / START A CONVERSATION</div>
+        <div class="aj-mobile-heading">Your idea<br><em>starts here.</em></div>
+        <p>Tell us what you're imagining. Let's make a plan together.</p>
+        <a class="aj-mobile-contact-link" href="mailto:anudeepjanu.22@gmail.com">anudeepjanu.22@gmail.com <b>↗</b></a>
+        <a class="aj-mobile-contact-link" href="https://wa.me/919704770375" target="_blank" rel="noopener">Chat on WhatsApp <b>↗</b></a>
+        <div class="aj-mobile-footer-mark">AJ<span>✳</span></div>
+        <small>AJ CREATORS · HYDERABAD, INDIA</small>
+      </section>
+    </main>
+    <nav class="aj-mobile-dock" aria-label="Mobile section navigation">
+      <a href="#aj-mobile-projects" class="active"><span>▦</span>Projects</a>
+      <a href="#aj-mobile-required"><span>⌘</span>Required</a>
+      <a href="#aj-mobile-plans"><span>↗</span>Plans</a>
+      <a href="#aj-mobile-cost"><span>₹</span>Estimation</a>
+      <a href="#aj-mobile-ideas"><span>✳</span>Ideas</a>
+    </nav>
+  </div>
+</div>
+<!-- AJ MOBILE PHONE EXPERIENCE END -->
+
+<!-- AJ PROJECT 3D PREVIEW MODAL -->
+<div class="aj-project-modal" id="aj-project-modal" aria-hidden="true">
+ <div class="aj-modal-backdrop" data-close-project></div>
+ <section class="aj-modal-panel" role="dialog" aria-modal="true" aria-labelledby="aj-modal-title">
+  <button class="aj-modal-close" type="button" aria-label="Close project preview" data-close-project>×</button>
+  <div class="aj-modal-kicker" id="aj-modal-kicker">PROJECT PREVIEW / 01</div>
+  <div class="aj-modal-layout">
+   <div class="aj-modal-copy"><h2 id="aj-modal-title">Jaanu Farm's</h2><p id="aj-modal-desc">A concept for a simple, friendly farm-to-home ordering experience.</p>
+    <div class="aj-modal-tags" id="aj-modal-tags"><span>Flutter</span><span>Mobile UX</span><span>Ordering</span></div>
+    <div class="aj-modal-controls"><button type="button" id="aj-shot-prev" aria-label="Previous screen">←</button><span id="aj-shot-index">01 / 04</span><button type="button" id="aj-shot-next" aria-label="Next screen">→</button></div>
+    <a class="aj-modal-repo-link" id="aj-modal-repo" href="#" target="_blank" rel="noopener" hidden>VIEW GITHUB REPOSITORY ↗</a>
+    <small class="aj-modal-disclaimer">Illustrative UI preview · open the linked repository for the source project</small>
+   </div>
+   <div class="aj-phone-gallery" id="aj-phone-gallery">
+    <div class="aj-gallery-orbit"></div>
+    <div class="aj-phone-3d" id="aj-phone-3d">
+     <div class="aj-phone-frame"><div class="aj-phone-screen" id="aj-phone-screen">
+      <div class="aj-shot-status"><span>9:41</span><span>●●● ▰</span></div>
+      <div class="aj-shot-content" id="aj-shot-content"></div>
+      <div class="aj-shot-nav"><i>⌂</i><i>▦</i><i>♡</i><i>♙</i></div>
+     </div></div>
+    </div>
+    <div class="aj-gallery-float float-top">DESIGNED FOR PEOPLE</div><div class="aj-gallery-float float-bottom">AJ CREATORS / UI STUDY</div>
+   </div>
+  </div>
+ </section>
+</div>
+
+
+
+<div class="ticker" aria-label="Our capabilities"><div class="ticker-track"><span>✳ <strong>Mobile experiences</strong></span><i>✦</i><span>Business platforms</span><i>✦</i><span><strong>Web experiences</strong></span><i>✦</i><span>AI & automation</span><i>✦</i><span>Product thinking</span><i>✦</i><span>Made for people</span><i>✦</i><span>✳ <strong>Mobile experiences</strong></span><i>✦</i><span>Business platforms</span><i>✦</i><span><strong>Web experiences</strong></span><i>✦</i><span>AI & automation</span><i>✦</i><span>Product thinking</span><i>✦</i><span>Made for people</span></div></div>
+
+
+<!-- AJ CINEMATIC SCROLL STORY START -->
+<section class="aj-story" id="aj-story" aria-label="The AJ Creators digital experience">
+  <div class="aj-story-pin">
+    <div class="aj-story-grain"></div>
+    <div class="aj-story-top"><span>AJ CREATORS / DIGITAL STUDIO</span><span class="aj-story-counter"><b id="aj-scene-count">01</b> — 04</span></div>
+    <div class="aj-story-copy">
+      <span class="aj-story-kicker" id="aj-story-kicker">IDEAS, IN MOTION</span>
+      <h2 id="aj-story-title">It starts<br>with a <em>spark.</em></h2>
+      <p id="aj-story-desc">Every meaningful digital product begins as a small idea. We give it shape, purpose and a world of its own.</p>
+      <a href="#work" class="aj-story-link">Explore what we create <span>↗</span></a>
+    </div>
+    <div class="aj-scene" id="aj-scene">
+      <div class="aj-scene-halo"></div>
+      <div class="aj-orbit aj-orbit-one"></div><div class="aj-orbit aj-orbit-two"></div>
+      <div class="aj-core" id="aj-core"><span>AJ</span><i>✳</i></div>
+      <div class="aj-scene-label label-one">IDEA → EXPERIENCE</div>
+      <div class="aj-scene-label label-two">DESIGNED TO MOVE YOU</div>
+      <div class="aj-interface ui-phone" id="aj-ui-phone"><div class="ui-notch"></div><div class="ui-brand">AJ / APP STUDIO</div><div class="ui-greeting">Good ideas<br><b>live here.</b></div><div class="ui-orb"></div><div class="ui-line wide"></div><div class="ui-line"></div><div class="ui-bottom"><i></i><i></i><i></i><i></i></div></div>
+      <div class="aj-interface ui-browser" id="aj-ui-browser"><div class="ui-browser-top"><i></i><i></i><i></i><span>yourbrand.com</span></div><div class="ui-browser-hero"><small>BUILT FOR WHAT'S NEXT</small><b>Make your<br>next move.</b><div class="ui-browser-pill"></div></div><div class="ui-browser-cards"><i></i><i></i><i></i></div></div>
+      <div class="aj-interface ui-dashboard" id="aj-ui-dashboard"><div class="ui-dash-head">BUSINESS OVERVIEW <b>↗</b></div><div class="ui-dash-number">₹ 2.48L <small>+18.6%</small></div><div class="ui-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="ui-dash-foot"><span>ORDERS</span><span>REVENUE</span><span>GROWTH</span></div></div>
+      <div class="aj-floating-tag tag-mobile">✳ MOBILE APPS</div><div class="aj-floating-tag tag-web">◫ WEB EXPERIENCES</div><div class="aj-floating-tag tag-ai">⌘ AI / AUTOMATION</div>
+    </div>
+    <div class="aj-story-bottom"><span>SCROLL TO EXPLORE</span><div class="aj-story-track"><i id="aj-story-track-fill"></i></div><span>BUILT WITH INTENT.</span></div>
+  </div>
+  <div class="aj-story-steps" aria-hidden="true">
+    <div data-scene="0"></div><div data-scene="1"></div><div data-scene="2"></div><div data-scene="3"></div>
+  </div>
+</section>
+<!-- AJ CINEMATIC SCROLL STORY END -->
+
+<section class="section" id="services">
+ <div class="wrap">
+  <div class="section-head reveal"><span class="kicker">01 / What we make</span><h2>Digital, with a little more <span class="gradient">imagination.</span></h2><p>Pick the challenge that sounds like yours. We’ll shape the right solution around your customers, operations and goals.</p></div>
+  <div class="service-layout reveal">
+   <div class="service-tabs" role="tablist" aria-label="Services">
+    <button class="service-tab active" data-service="apps" role="tab" aria-selected="true"><b>Mobile apps</b><span>01 ↗</span></button>
+    <button class="service-tab" data-service="web" role="tab" aria-selected="false"><b>Web experiences</b><span>02 ↗</span></button>
+    <button class="service-tab" data-service="systems" role="tab" aria-selected="false"><b>Business systems</b><span>03 ↗</span></button>
+    <button class="service-tab" data-service="ai" role="tab" aria-selected="false"><b>AI & automation</b><span>04 ↗</span></button>
+    <button class="service-tab" data-service="care" role="tab" aria-selected="false"><b>Product care</b><span>05 ↗</span></button>
+   </div>
+   <div class="service-display" id="serviceDisplay" role="tabpanel" aria-live="polite">
+    <span class="service-number" id="serviceNumber">SERVICE / 01</span>
+    <h3 id="serviceTitle">An app that feels like it was made just for your customers.</h3>
+    <p id="serviceDescription">From ordering and booking to customer accounts and delivery updates, we design mobile experiences that make everyday interactions simple.</p>
+    <div class="service-points" id="servicePoints"><span>Flutter / Dart</span><span>Kotlin / Android</span><span>Firebase</span><span>API integration</span></div>
+    <a class="text-link" href="#contact" id="serviceLink">Let's talk about your app ↗</a>
+   </div>
+  </div>
+  <div class="solution-strip reveal">
+   <article class="solution"><small>FOR RETAIL & COMMERCE</small><b>Make buying effortless.</b><p>Catalogues, orders, payments, customer accounts and repeat purchase journeys.</p></article>
+   <article class="solution"><small>FOR SERVICE BUSINESSES</small><b>Make every booking count.</b><p>Appointments, schedules, reminders, staff tools and service histories.</p></article>
+   <article class="solution"><small>FOR GROWING TEAMS</small><b>Bring the moving parts together.</b><p>Inventory, dashboards, reporting, operations and workflow automation.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section alt" id="work">
+ <div class="wrap">
+  <div class="section-head reveal"><span class="kicker">02 / Selected concepts</span><h2>Ideas you can almost <span class="gradient">touch.</span></h2><p>A glimpse of the digital experiences we can shape. These are concept showcases that demonstrate possible product directions, not claims of launched client deployments.</p></div>
+  <div class="work-grid">
+   <article class="work-card large reveal aj-work-explore" data-project="farm" tabindex="0" role="button" aria-label="Explore AJ Farm / Everyday made fresher preview">
+    <div class="work-art green"><div class="phone-mock"><div class="phone-screen"><img class="aj-mark-img" src="./aj-creators-professional-logo.png" alt="AJ Creators logo"><div class="phone-title">Fresh, every day.</div><div class="phone-sub">A simple way to order farm-fresh essentials.</div><div class="phone-action">Explore products</div><div class="phone-sub" style="margin-top:12px">Subscriptions · Delivery · Easy payments</div></div></div></div>
+    <div class="work-meta"><span class="label">Commerce · Mobile app concept</span><h3>AJ Farm / Everyday made fresher.</h3><p>A dairy ordering experience with product selection, recurring subscriptions, delivery slots, customer accounts and a simple business dashboard.</p><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
+   </article>
+   <article class="work-card reveal aj-work-explore" data-project="dashboard" tabindex="0" role="button" aria-label="Explore Business in focus preview">
+    <div class="work-art"><div class="mock-window"><div class="mock-head"><span>BUSINESS / OVERVIEW</span><span>•••</span></div><div class="mock-banner">Know your business.</div><div class="mock-bars"><i></i><i></i><i></i></div><div class="mock-chart"></div></div></div>
+    <div class="work-meta"><span class="label">Operations · Web dashboard concept</span><h3>Business in focus.</h3><p>One clear workspace for orders, customers, inventory and business insights.</p><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
+   </article>
+   <article class="work-card reveal aj-work-explore" data-project="notes" tabindex="0" role="button" aria-label="Explore Secure Notes preview">
+    <div class="work-art warm"><div class="note-ui"><span class="note-tag">PRIVATE SPACE</span><h4>Your thoughts.<br>Your space.</h4><div class="note-line"></div><div class="note-line"></div><div class="note-line"></div><span class="note-tag">Encrypted notes concept</span></div></div>
+    <div class="work-meta"><span class="label">Productivity · Android app concept</span><h3>Secure Notes.</h3><p>A focused notes experience with privacy-minded design, organisation and a calm writing flow.</p><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
+   </article>
+   <article class="work-card reveal aj-work-explore" data-project="school" tabindex="0" role="button" aria-label="Explore ERS School preview">
+    <div class="aj-work-link">
+     <div class="work-art aj-school-art"><div class="aj-school-screen"><div class="aj-school-top">ERS <span>✦</span></div><div class="aj-school-crest">E</div><b>Learning<br>starts here.</b><small>SCHOOL MANAGEMENT · FLUTTER</small><div class="aj-school-pills"><i>Students</i><i>Classes</i><i>Updates</i></div></div></div>
+     <div class="work-meta"><span class="label">Education · Flutter project</span><h3>ERS School.</h3><p>A school-focused Flutter application project. Explore the source, assets and implementation on GitHub.</p><span class="aj-github-cta">GITHUB LINK IN PREVIEW ↗</span><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
+    </div>
+   </article>
+   <article class="work-card reveal aj-work-explore" data-project="android" tabindex="0" role="button" aria-label="Explore Now in Android preview">
+    <div class="aj-work-link">
+     <div class="work-art aj-android-art"><div class="aj-android-screen"><div class="aj-android-top"><b>Now in Android</b><span>⌕</span></div><div class="aj-android-feature"><small>DEVELOPMENT · DESIGN · COMMUNITY</small><b>Stay in the<br>Android loop.</b></div><div class="aj-android-feed"><i></i><i></i><i></i></div></div></div>
+     <div class="work-meta"><span class="label">Android · GitHub repository</span><h3>Now in Android.</h3><p>Explore the Android project repository and its implementation details on GitHub.</p><span class="aj-github-cta">GITHUB LINK IN PREVIEW ↗</span><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
+    </div>
+   </article>
+
+   
+
+  </div>
+  <p class="disclaimer">CONCEPT VISUALS · FEATURES, SCOPE AND TECHNICAL APPROACH ARE CONFIRMED PER CLIENT PROJECT.</p>
+ </div>
+</section>
+
+<section class="section" id="about">
+ <div class="wrap">
+  <div class="about-band reveal">
+   <div class="about-logo"><img class="aj-mark-img" src="./aj-creators-professional-logo.png" alt="AJ Creators logo"></div>
+   <div class="about-copy"><span class="kicker">03 / A little about our studio</span><h2>Small studio energy.<br><span class="gradient">Big-picture thinking.</span></h2><p>AJ Creators brings business understanding and practical technology together. We start by listening, map the real requirements, then build a solution that fits the people who will use it.</p><p>Our approach is shaped by experience in data quality, QA review and digital mapping, alongside hands-on work with modern app and software technologies.</p><div class="about-tags"><span>Flutter / Dart</span><span>Kotlin / Android</span><span>Python</span><span>SQL & APIs</span><span>QA-minded delivery</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section alt" id="pricing">
+ <div class="wrap">
+  <div class="section-head reveal"><span class="kicker">04 / Straightforward starting points</span><h2>Start with what you need.<br><span class="gradient">Grow when you're ready.</span></h2><p>Every project is different. These are planning guides to help start the conversation; final pricing follows a requirements review and written scope.</p></div>
+  <div class="pricing-grid">
+   <article class="price-card reveal"><span class="tag">A CLEAR FIRST STEP</span><h3>Launchpad</h3><p>For a focused landing page or a simple business presence.</p><div class="price">From ₹12,000<small> / project</small></div><ul><li>Responsive website</li><li>Core pages and contact CTA</li><li>Basic SEO setup</li><li>Enquiry link integration</li><li>Launch handover</li></ul><a class="button ghost" href="#contact" data-plan="Launchpad website">Discuss this plan ↗</a></article>
+   <article class="price-card featured reveal"><span class="tag">MOST FLEXIBLE</span><h3>Business Builder</h3><p>For a business workflow that needs a custom digital tool.</p><div class="price">From ₹35,000<small> / project</small></div><ul><li>Requirements and user flows</li><li>Core app or dashboard screens</li><li>Database / API planning</li><li>Testing and milestone reviews</li><li>Deployment guidance</li></ul><a class="button primary" href="#contact" data-plan="Business Builder app">Plan my project ↗</a></article>
+   <article class="price-card reveal"><span class="tag">BUILT AROUND YOU</span><h3>Custom Product</h3><p>For multi-feature apps, integrations or more complex systems.</p><div class="price">Let's scope it<small> / custom quote</small></div><ul><li>Discovery and detailed scope</li><li>Architecture and integrations</li><li>Milestone-based development</li><li>QA and release support</li><li>Optional ongoing care</li></ul><a class="button ghost" href="#contact" data-plan="Custom Product">Get a custom estimate ↗</a></article>
+  </div>
+  <p class="price-note">Indicative starting prices only. Hosting, paid third-party services, app-store fees, taxes and ongoing support are quoted separately where applicable.</p>
+ </div>
+</section>
+
+<section class="section" id="process">
+ <div class="wrap">
+  <div class="section-head reveal"><span class="kicker">05 / How good ideas get made</span><h2>A little clarity.<br><span class="gradient">A lot more momentum.</span></h2><p>No jargon-heavy handoffs. Just a shared plan, visible progress and clear decisions at each stage.</p></div>
+  <div class="steps">
+   <article class="step reveal"><span class="step-num">01 / DISCOVER</span><h3>Listen first.</h3><p>Understand your business, customers, challenges, budget and what success means.</p></article>
+   <article class="step reveal"><span class="step-num">02 / SHAPE</span><h3>Make a plan.</h3><p>Define requirements, user journeys, essential features, design direction and estimate.</p></article>
+   <article class="step reveal"><span class="step-num">03 / CREATE</span><h3>Build with care.</h3><p>Develop in agreed milestones, test the important flows and share progress.</p></article>
+   <article class="step reveal"><span class="step-num">04 / LAUNCH</span><h3>Make it real.</h3><p>Prepare deployment, hand over agreed assets and plan what comes next.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="contact-section" id="contact">
+ <div class="wrap contact-grid">
+  <div class="contact-copy reveal">
+   <span class="kicker">06 / Your idea starts here</span>
+   <h2>Let's make<br><span class="gradient">something matter.</span></h2>
+   <p>Tell us what you're trying to improve. You don't need a perfect brief — we'll help turn the first conversation into clear requirements, a realistic plan and a project estimate.</p>
+   <div class="contact-methods">
+    <a class="contact-method" href="mailto:anudeepjanu.22@gmail.com"><i>✉</i><span><small>WRITE TO US</small><b>anudeepjanu.22@gmail.com</b></span></a>
+    <a class="contact-method" href="tel:+919704770375"><i>↗</i><span><small>CALL / WHATSAPP</small><b>+91 9704770375</b></span></a>
+    <div class="contact-method"><i>⌖</i><span><small>BASED IN</small><b>Hyderabad, Telangana · Serving India</b></span></div>
+   </div>
+  </div>
+  <form class="lead-form reveal" id="leadForm">
+   <h3>Tell us a little about it.</h3><p>We'll prepare for a more useful first conversation.</p>
+   <div class="form-grid">
+    <div class="field"><label for="name">Your name *</label><input id="name" name="name" required placeholder="How should we call you?"></div>
+    <div class="field"><label for="business">Business name</label><input id="business" name="business" placeholder="Your business or brand"></div>
+    <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+    <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="+91"></div>
+    <div class="field"><label for="service">What are you imagining? *</label><select id="service" name="service" required><option value="">Choose a starting point</option><option>Mobile app</option><option>Business website</option><option>Business software / dashboard</option><option>AI / automation</option><option>Existing product improvements</option><option>Not sure — help me explore</option></select></div>
+    <div class="field"><label for="budget">Budget range</label><select id="budget" name="budget"><option value="">Let's discuss</option><option>Below ₹25,000</option><option>₹25,000–₹75,000</option><option>₹75,000–₹2,00,000</option><option>Above ₹2,00,000</option><option>Need guidance</option></select></div>
+    <div class="field full"><label for="details">What would you like to make easier? *</label><textarea id="details" name="details" required placeholder="Tell us about your business, the problem you're facing and what a better solution would look like..."></textarea></div>
+   </div>
+   <button class="button primary" type="submit">Send project enquiry <span>↗</span></button>
+   <p class="form-note">This form opens your email app with the enquiry details. It does not store leads online. Connect a secure form backend or CRM before relying on server-side lead capture.</p>
+   <p class="form-note" id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+ </div>
+</section>
+</main>
+<footer class="footer">
+ <div class="wrap"><div class="footer-row">
+  <a class="brand" href="#home"><img class="aj-mark-img" src="./aj-creators-professional-logo.png" alt="AJ Creators logo"><span class="brand-name">AJ Creators<small>& CREATORS</small></span></a>
+  <nav class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">Studio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
+ </div><div class="copyright"><span>© <span id="year"></span> AJ Creators. All rights reserved.</span><span>IDEAS, MADE REMARKABLE. · HYDERABAD, INDIA</span></div></div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/919704770375?text=Hi%20AJ%20Creators%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><span>◉</span> <span class="whats-text">Let's talk on WhatsApp</span></a>
+<script>
+const serviceContent={
+ apps:{num:"SERVICE / 01",title:"An app that feels like it was made just for your customers.",desc:"From ordering and booking to customer accounts and delivery updates, we design mobile experiences that make everyday interactions simple.",points:["Flutter / Dart","Kotlin / Android","Firebase","API integration"],link:"Let's talk about your app ↗"},
+ web:{num:"SERVICE / 02",title:"A website that makes your first impression count.",desc:"Brand-led websites, landing pages and customer portals that tell your story clearly, look beautiful on every screen and make it easy to take the next step.",points:["Responsive design","Business websites","Portals & dashboards","SEO foundations"],link:"Let's talk about your website ↗"},
+ systems:{num:"SERVICE / 03",title:"Less spreadsheet juggling. More business clarity.",desc:"Purpose-built systems that bring orders, inventory, customer records, staff workflows and reports into one connected place.",points:["Admin dashboards","Inventory & orders","Role-based access","Reports & workflows"],link:"Let's talk about your business system ↗"},
+ ai:{num:"SERVICE / 04",title:"Let repetitive work happen in the background.",desc:"Practical automation and AI-assisted workflows that reduce manual steps, connect your tools and help your team focus on work that matters.",points:["Workflow automation","Python services","API connections","AI-assisted tools"],link:"Explore automation ↗"},
+ care:{num:"SERVICE / 05",title:"Make what you already have work even better.",desc:"Get help reviewing an existing app, fixing rough edges, improving reliability or planning the next release with a clear priority list.",points:["QA & testing","Bug fixes","Performance review","Feature roadmap"],link:"Improve an existing product ↗"}
+};
+const tabs=[...document.querySelectorAll(".service-tab")],display=document.getElementById("serviceDisplay");
+tabs.forEach(tab=>tab.addEventListener("click",()=>{
+ tabs.forEach(t=>{t.classList.remove("active");t.setAttribute("aria-selected","false")});
+ tab.classList.add("active");tab.setAttribute("aria-selected","true");
+ const d=serviceContent[tab.dataset.service];display.classList.remove("swap");void display.offsetWidth;display.classList.add("swap");
+ document.getElementById("serviceNumber").textContent=d.num;
+ document.getElementById("serviceTitle").textContent=d.title;
+ document.getElementById("serviceDescription").textContent=d.desc;
+ document.getElementById("servicePoints").innerHTML=d.points.map(x=>`<span>${x}</span>`).join("");
+ document.getElementById("serviceLink").textContent=d.link;
+}));
+const menu=document.getElementById("menu"),nav=document.getElementById("navlinks");
+menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));menu.textContent=open?"×":"☰"});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");menu.textContent="☰"}));
+document.querySelectorAll("[data-plan]").forEach(a=>a.addEventListener("click",()=>{const s=document.getElementById("service");s.value=a.dataset.plan.includes("website")?"Business website":a.dataset.plan.includes("MVP")?"Mobile app":a.dataset.plan.includes("Custom")?"Not sure — help me explore":"Business software / dashboard";document.getElementById("details").value="I'm interested in the "+a.dataset.plan+" option. Please help me confirm the scope, features and project estimate."}));
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("leadForm").addEventListener("submit",e=>{
+ e.preventDefault();const d=new FormData(e.target);
+ const subject=encodeURIComponent("Project enquiry — "+d.get("service"));
+ const body=encodeURIComponent(`Name: ${d.get("name")}\nBusiness: ${d.get("business")}\nEmail: ${d.get("email")}\nPhone: ${d.get("phone")}\nService: ${d.get("service")}\nBudget: ${d.get("budget")}\n\nProject details:\n${d.get("details")}`);
+ document.getElementById("formStatus").textContent="Opening your email app with your project enquiry…";
+ window.location.href=`mailto:anudeepjanu.22@gmail.com?subject=${subject}&body=${body}`;
+});
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>revealObserver.observe(el));
+const stage=document.getElementById("deviceStage"),heroArt=document.getElementById("heroArt"),glow=document.getElementById("cursorGlow");
+if(window.matchMedia("(pointer:fine)").matches){
+ heroArt.addEventListener("pointermove",e=>{const r=heroArt.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;stage.style.transform=`rotateY(${-17+x*18}deg) rotateX(${7-y*14}deg) rotateZ(${-3+x*3}deg)`});
+ heroArt.addEventListener("pointerleave",()=>stage.style.transform="rotateY(-17deg) rotateX(7deg) rotateZ(-3deg)");
+ window.addEventListener("pointermove",e=>{glow.style.left=e.clientX+"px";glow.style.top=e.clientY+"px"});
+}
+</script>
+
+<script id="aj-motion-engine">
+(()=>{
+ const doc=document,progress=doc.getElementById('aj-progress');
+ if(progress){
+  const update=()=>{const max=doc.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%'};
+  addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();
+ }
+ const targets=doc.querySelectorAll('.reveal,.section-head,.work-card,.price-card,.step,.solution,.about-band,.contact-grid,.service-layout');
+ if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('aj-in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  targets.forEach(el=>{if(!el.closest('.hero')){el.classList.add('aj-reveal');io.observe(el)}});
+ }else targets.forEach(el=>el.classList.add('aj-in'));
+})();
+</script>
+
+
+<script id="aj-cinematic-scroll">
+(()=>{
+ const root=document.getElementById('aj-story');if(!root)return;
+ const title=document.getElementById('aj-story-title'),desc=document.getElementById('aj-story-desc'),
+       kicker=document.getElementById('aj-story-kicker'),count=document.getElementById('aj-scene-count'),
+       fill=document.getElementById('aj-story-track-fill');
+ const scenes=[
+  {k:'IDEAS, IN MOTION',t:'It starts<br>with a <em>spark.</em>',d:'Every meaningful digital product begins as a small idea. We give it shape, purpose and a world of its own.'},
+  {k:'MADE FOR THE POCKET',t:'Apps that feel<br><em>effortless.</em>',d:'Thoughtful mobile experiences, crafted to feel natural, useful and beautifully simple on every screen.'},
+  {k:'YOUR BRAND, IN ITS ELEMENT',t:'A digital home<br>with <em>presence.</em>',d:'Websites that tell your story with clarity, confidence and a visual identity people remember.'},
+  {k:'CLARITY BEHIND THE SCENES',t:'Make business<br><em>flow.</em>',d:'Smart dashboards, custom software and AI-powered workflows that turn complexity into momentum.'}
+ ];
+ let active=-1,raf=false;
+ const update=()=>{
+  raf=false;const rect=root.getBoundingClientRect(),travel=root.offsetHeight-innerHeight;
+  const p=Math.max(0,Math.min(1,-rect.top/Math.max(1,travel)));
+  const idx=Math.min(3,Math.floor(p*4));
+  root.dataset.scene=idx;fill.style.width=(p*100)+'%';
+  if(idx!==active){active=idx;const s=scenes[idx];kicker.textContent=s.k;title.innerHTML=s.t;desc.textContent=s.d;count.textContent='0'+(idx+1)}
+ };
+ const onScroll=()=>{if(!raf){raf=true;requestAnimationFrame(update)}};
+ addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);update();
+})();
+</script>
+
+
+<script id="aj-mobile-phone-experience">
+(()=>{
+ const screen=matchMedia('(max-width:760px)');
+ if(!screen.matches)return;
+ const lock=document.getElementById('aj-lock-screen'),app=document.getElementById('aj-mobile-app'),btn=document.getElementById('aj-unlock');
+ if(!lock||!app||!btn)return;
+ const time=document.getElementById('aj-lock-time');
+ const updateTime=()=>{const d=new Date();time.textContent=d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit',hour12:false})};
+ updateTime();
+ btn.addEventListener('click',()=>{lock.classList.add('aj-unlocking');app.classList.add('aj-open');setTimeout(()=>{lock.style.display='none';document.getElementById('aj-mobile-screens').scrollTo({top:0,behavior:'smooth'})},850)});
+ // Allow a natural swipe-up gesture to unlock.
+ let startY=0;
+ lock.addEventListener('touchstart',e=>{startY=e.touches[0].clientY},{passive:true});
+ lock.addEventListener('touchend',e=>{if(startY-e.changedTouches[0].clientY>45)btn.click()},{passive:true});
+ const scroller=document.getElementById('aj-mobile-screens'),links=[...document.querySelectorAll('.aj-mobile-dock a')];
+ if(scroller&&'IntersectionObserver'in window){
+  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id))}}),{root:scroller,threshold:.55});
+  document.querySelectorAll('.aj-mobile-screen').forEach(s=>io.observe(s));
+ }
+})();
+</script>
+
+
+<script id="aj-3d-project-gallery">
+(()=>{
+ const modal=document.getElementById('aj-project-modal');if(!modal)return;
+ const title=document.getElementById('aj-modal-title'),desc=document.getElementById('aj-modal-desc'),
+       kicker=document.getElementById('aj-modal-kicker'),content=document.getElementById('aj-shot-content'),
+       index=document.getElementById('aj-shot-index'),phone=document.getElementById('aj-phone-3d'),
+       tags=document.getElementById('aj-modal-tags'),repoLink=document.getElementById('aj-modal-repo');
+ const projects={
+  farm:{name:"Jaanu Farm's",repo:'https://github.com/Anudeepjadi/Jaanu-s-Farm',type:'PROJECT PREVIEW / MOBILE APP',description:'A concept for a simple farm-to-home ordering experience: browse fresh products, add to basket and follow an order.',tags:['Flutter concept','Shopping flow','Mobile UX'],shots:[
+   `<div class="aj-shot-brand"><b>Jaanu Farm's</b><small>Fresh every day</small></div><div class="aj-shot-hero"><small>FRESH FROM OUR FARM</small><b>Goodness, delivered.</b><i>✿</i></div><div class="aj-shot-section-title">Shop by category</div><div class="aj-shot-products"><div class="aj-shot-product"><div class="produce">🥛</div><b>Cow Milk</b><small>Fresh & pure</small></div><div class="aj-shot-product"><div class="produce">🥛</div><b>Buffalo Milk</b><small>Rich & creamy</small></div></div><div class="aj-shot-action">Explore products</div>`,
+   `<div class="aj-shot-brand"><b>Explore products</b><small>See all</small></div><div class="aj-shot-search">⌕  Search milk and dairy</div><div class="aj-shot-products"><div class="aj-shot-product"><div class="produce">🥛</div><b>Organic Cow Milk</b><small>₹ 65 / litre</small></div><div class="aj-shot-product"><div class="produce">🧈</div><b>Farm Butter</b><small>₹ 120 / pack</small></div><div class="aj-shot-product"><div class="produce">🥣</div><b>Fresh Curd</b><small>₹ 45 / cup</small></div><div class="aj-shot-product"><div class="produce">🧀</div><b>Paneer</b><small>₹ 90 / pack</small></div></div>`,
+   `<div class="aj-shot-brand"><b>Your basket</b><small>2 items</small></div><div class="aj-shot-cart"><div class="aj-shot-cart-row"><span>🥛 Cow Milk × 2</span><b>₹130</b></div><div class="aj-shot-cart-row"><span>🥣 Fresh Curd × 1</span><b>₹45</b></div><div class="aj-shot-cart-total"><span>Total</span><b>₹175</b></div></div><div class="aj-shot-action">Continue to delivery</div>`,
+   `<div class="aj-shot-brand"><b>Order status</b><small>#JF1048</small></div><div class="aj-shot-order"><span class="status">● Confirmed</span><b>Your fresh order is on its way!</b><p>Thank you for choosing Jaanu Farm's. Your delivery updates will appear here.</p><div class="aj-shot-action">Track order</div></div>`
+  ]},
+  dashboard:{name:'Business Dashboard',type:'PROJECT PREVIEW / BUSINESS SOFTWARE',description:'A dashboard concept for monitoring orders, revenue and business activity in one clear view.',tags:['Dashboard concept','Analytics','Responsive UI'],shots:[
+   `<div class="aj-shot-brand"><b>Overview</b><small>Today⌄</small></div><div class="aj-shot-hero"><small>TOTAL REVENUE</small><b>₹ 2,48,500</b><i>↗</i></div><div class="aj-shot-section-title">Performance</div><div class="aj-shot-products"><div class="aj-shot-product"><b>Orders</b><div class="produce">128</div></div><div class="aj-shot-product"><b>Customers</b><div class="produce">86</div></div></div>`,
+   `<div class="aj-shot-brand"><b>Analytics</b><small>Weekly⌄</small></div><div class="aj-shot-hero"><small>GROWTH</small><b>+18.6%</b><i>↗</i></div><div class="aj-shot-section-title">Revenue trend</div><div class="aj-shot-products"><div class="aj-shot-product"><div class="produce">▂▅▃▇▆█</div><b>This week</b></div><div class="aj-shot-product"><div class="produce">▃▃▅▆▇█</div><b>Last week</b></div></div>`,
+   `<div class="aj-shot-brand"><b>Recent orders</b><small>View all</small></div><div class="aj-shot-cart"><div class="aj-shot-cart-row"><span>Order #1082</span><b>₹1,250</b></div><div class="aj-shot-cart-row"><span>Order #1081</span><b>₹840</b></div><div class="aj-shot-cart-row"><span>Order #1080</span><b>₹2,100</b></div></div>`,
+   `<div class="aj-shot-brand"><b>Insights</b><small>Updated now</small></div><div class="aj-shot-order"><span class="status">● Healthy</span><b>Your business is growing</b><p>Revenue and order volume are trending upward in this sample dashboard concept.</p></div>`
+  ]},
+  notes:{name:'Secure Notes',type:'PROJECT PREVIEW / PRODUCTIVITY',description:'A privacy-focused notes app concept with a clean writing space and a simple security-first experience.',tags:['App concept','Privacy UX','Productivity'],shots:[
+   `<div class="aj-shot-brand"><b>Secure Notes</b><small>•••</small></div><div class="aj-shot-hero"><small>YOUR PRIVATE SPACE</small><b>Thoughts, safely kept.</b><i>✧</i></div><div class="aj-shot-section-title">Your notes</div><div class="aj-shot-cart"><div class="aj-shot-cart-row"><span>Project ideas</span><b>›</b></div><div class="aj-shot-cart-row"><span>Personal notes</span><b>›</b></div></div>`,
+   `<div class="aj-shot-brand"><b>New note</b><small>Save</small></div><div class="aj-shot-order"><span class="status">● Private note</span><b>Ideas for the next big thing</b><p>Capture your thoughts in a calm, focused writing space.</p></div>`,
+   `<div class="aj-shot-brand"><b>Security</b><small>Settings</small></div><div class="aj-shot-cart"><div class="aj-shot-cart-row"><span>App lock</span><b>ON</b></div><div class="aj-shot-cart-row"><span>Biometric unlock</span><b>ON</b></div><div class="aj-shot-cart-row"><span>Auto-lock</span><b>1 min</b></div></div>`,
+   `<div class="aj-shot-brand"><b>All notes</b><small>Search</small></div><div class="aj-shot-order"><span class="status">● Encrypted concept</span><b>Your space. Your control.</b><p>A sample interface demonstrating privacy-focused product design.</p></div>`
+  ]}
+ };
+
+ Object.assign(projects, {
+  school:{name:'ERS School',repo:'https://github.com/Anudeepjadi/ersschool',type:'PROJECT PREVIEW / EDUCATION APP',description:'An illustrative school app journey inspired by the ERS School Flutter repository: a student-friendly home, class schedule, attendance and school updates.',tags:['Flutter project','School app','Student experience'],shots:[
+   `<div class="aj-shot-brand"><b>ERS School</b><small>Good morning, Anu</small></div><div class="aj-shot-hero aj-school-shot-hero"><small>YOUR SCHOOL, AT A GLANCE</small><b>Ready for a great day?</b><i>✦</i></div><div class="aj-shot-section-title">Today at school</div><div class="aj-shot-products"><div class="aj-shot-product"><div class="produce">📚</div><b>My classes</b><small>4 lessons today</small></div><div class="aj-shot-product"><div class="produce">✓</div><b>Attendance</b><small>Present today</small></div></div>`,
+   `<div class="aj-shot-brand"><b>My timetable</b><small>MON · 12 AUG</small></div><div class="aj-shot-order aj-school-lesson"><span class="status">● NOW · ROOM 204</span><b>Mathematics</b><p>Chapter 6 · Algebra<br>Teacher: Mrs. Rao</p></div><div class="aj-shot-cart"><div class="aj-shot-cart-row"><span>10:30 · Science</span><b>Lab 2</b></div><div class="aj-shot-cart-row"><span>11:30 · English</span><b>Room 108</b></div><div class="aj-shot-cart-row"><span>13:00 · Social Studies</span><b>Room 204</b></div></div>`,
+   `<div class="aj-shot-brand"><b>Attendance</b><small>THIS TERM</small></div><div class="aj-shot-hero aj-school-attendance"><small>YOUR ATTENDANCE</small><b>96%</b><i>✓</i></div><div class="aj-shot-section-title">Recent activity</div><div class="aj-shot-cart"><div class="aj-shot-cart-row"><span>Today · Monday</span><b>Present</b></div><div class="aj-shot-cart-row"><span>Friday · 9 Aug</span><b>Present</b></div></div>`,
+   `<div class="aj-shot-brand"><b>School updates</b><small>2 new</small></div><div class="aj-shot-order"><span class="status">● ANNOUNCEMENT</span><b>Science fair registrations are open</b><p>Share your project idea with your class teacher by Friday.</p></div><div class="aj-shot-order"><span class="status">● CLASS 8B</span><b>Tomorrow's library period</b><p>Bring your student ID and return any borrowed books.</p></div>`
+  ]},
+  android:{name:'Now in Android',repo:'https://github.com/android/nowinandroid',type:'PROJECT PREVIEW / ANDROID APP',description:'An illustrative walkthrough based on the official Now in Android app: browse Android development stories, follow topics and keep up with new releases.',tags:['Kotlin & Jetpack Compose','News feed','Topic following'],shots:[
+   `<div class="aj-shot-brand aj-nia-brand"><b><span class="aj-nia-mark">N</span> Now in Android</b><small>⌕</small></div><div class="aj-shot-hero aj-nia-hero"><small>MONDAY, AUGUST 12</small><b>Make your app more adaptive</b><i>↗</i></div><div class="aj-shot-section-title">For you</div><div class="aj-shot-order aj-nia-story"><span class="status">ANDROID · 6 MIN READ</span><b>What's new in Android development</b><p>Fresh stories selected around the topics you follow.</p></div>`,
+   `<div class="aj-shot-brand aj-nia-brand"><b><span class="aj-nia-mark">N</span> Your feed</b><small>⌕</small></div><div class="aj-shot-section-title">Latest stories</div><div class="aj-shot-order aj-nia-story"><span class="status">JETPACK COMPOSE</span><b>Designing for every window size</b><p>Build flexible layouts for phones, tablets and foldables.</p></div><div class="aj-shot-order aj-nia-story"><span class="status">ANDROID STUDIO</span><b>A faster path from idea to app</b><p>Tools and releases from across the Android ecosystem.</p></div>`,
+   `<div class="aj-shot-brand aj-nia-brand"><b><span class="aj-nia-mark">N</span> Topics</b><small>EDIT</small></div><div class="aj-shot-section-title">Choose what you follow</div><div class="aj-nia-topics"><span>Android</span><span>Compose</span><span>Wear OS</span><span>Android Studio</span><span>Design</span><span>Performance</span></div><div class="aj-shot-action aj-nia-action">Following 4 topics</div>`,
+   `<div class="aj-shot-brand aj-nia-brand"><b><span class="aj-nia-mark">N</span> Saved stories</b><small>•••</small></div><div class="aj-shot-order aj-nia-story"><span class="status">SAVED · COMPOSE</span><b>Build beautiful UI with Material 3</b><p>Your reading list stays close, ready when you are.</p></div><div class="aj-shot-section-title">Your interests</div><div class="aj-nia-topics"><span>Compose</span><span>Design</span></div>`
+  ]}
+ });
+ let active=null,shot=0;
+ const render=()=>{
+  const p=projects[active];if(!p)return;
+  title.textContent=p.name;desc.textContent=p.description;kicker.textContent=p.type;
+  tags.innerHTML=p.tags.map(t=>`<span>${t}</span>`).join('');
+  repoLink.hidden=!p.repo;if(p.repo)repoLink.href=p.repo;
+  content.innerHTML=p.shots[shot];index.textContent=`0${shot+1} / 0${p.shots.length}`;
+  phone.animate([{transform:'rotateY(-15deg) rotateX(5deg) rotateZ(-3deg) scale(.96)',opacity:.6},{transform:'rotateY(-15deg) rotateX(5deg) rotateZ(-3deg) scale(1)',opacity:1}],{duration:380,easing:'cubic-bezier(.2,.8,.2,1)'});
+ };
+ const open=id=>{if(!projects[id])return;active=id;shot=0;render();modal.classList.add('is-open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'};
+ const close=()=>{modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');document.body.style.overflow=''};
+ document.querySelectorAll('.aj-project-open').forEach(b=>b.addEventListener('click',()=>open(b.dataset.project)));
+ document.querySelectorAll('.aj-work-explore').forEach(card=>{
+  card.addEventListener('click',e=>{if(e.target.closest('a,button'))return;open(card.dataset.project)});
+  card.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){e.preventDefault();open(card.dataset.project)}});
+ });
+ modal.querySelectorAll('[data-close-project]').forEach(b=>b.addEventListener('click',close));
+ document.getElementById('aj-shot-prev').addEventListener('click',()=>{shot=(shot+projects[active].shots.length-1)%projects[active].shots.length;render()});
+ document.getElementById('aj-shot-next').addEventListener('click',()=>{shot=(shot+1)%projects[active].shots.length;render()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('is-open'))close()});
+ // Subtle gyro tilt on the 3D phone mockup, limited to fine pointers.
+ const gallery=document.getElementById('aj-phone-gallery');
+ gallery.addEventListener('pointermove',e=>{if(!matchMedia('(pointer:fine)').matches)return;const r=gallery.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;phone.style.transform=`rotateY(${-15+x*18}deg) rotateX(${5-y*12}deg) rotateZ(${-3+x*3}deg)`});
+ gallery.addEventListener('pointerleave',()=>phone.style.transform='');
+})();
+</script>
+
+</body></html>
