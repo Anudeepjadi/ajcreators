@@ -681,6 +681,20 @@ footer a:hover{color:#e99b75!important}
 }
 
 
+/* Kisaan Mitra featured project and reel preview */
+.aj-kisaan-art{position:relative;background:radial-gradient(ellipse at 50% 100%,#9ac36d66,transparent 52%),linear-gradient(155deg,#7fb9a5 0%,#d6e5b2 48%,#395b3e 49%,#192b27 100%)}
+.aj-kisaan-sun{position:absolute;top:34px;right:48px;width:48px;height:48px;border-radius:50%;background:#f7d884;box-shadow:0 0 60px #ffe5a077}
+.aj-kisaan-field{position:absolute;inset:auto 0 0;height:38%;display:flex;justify-content:space-evenly;transform:perspective(220px) rotateX(18deg);transform-origin:bottom}
+.aj-kisaan-field i{width:10%;height:100%;border-radius:50% 50% 0 0;background:linear-gradient(90deg,#31573c,#88a952 48%,#31573c);opacity:.9}
+.aj-kisaan-phone{position:relative;z-index:1;width:155px;height:220px;border:5px solid #17272a;border-radius:26px;background:linear-gradient(155deg,#fbf5df,#d5e5c2);box-shadow:0 24px 65px #10251d99;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#23432e;transform:rotate(-7deg);transition:transform .5s}
+.aj-kisaan-phone span{font-size:48px}.aj-kisaan-phone b{font:700 26px 'Space Grotesk';line-height:.9;margin-top:5px}.aj-kisaan-phone small{font:8px 'DM Mono';letter-spacing:.13em;margin-top:12px;color:#62804e}
+.aj-kisaan-card:hover .aj-kisaan-phone{transform:rotate(0) translateY(-7px) scale(1.04)}
+.aj-kisaan-play{position:absolute;z-index:2;right:20px;bottom:20px;width:39px;height:39px;display:grid;place-items:center;border-radius:50%;color:#19271d;background:#d6f3a5;box-shadow:0 8px 25px #0005;padding-left:2px}
+.aj-project-reel{display:none;position:absolute;z-index:4;width:min(100%,380px);height:100%;max-height:540px;object-fit:contain;border-radius:20px;background:#050607;box-shadow:0 25px 75px #0009}
+.aj-phone-gallery.has-reel .aj-project-reel{display:block}.aj-phone-gallery.has-reel .aj-phone-3d,.aj-phone-gallery.has-reel .aj-gallery-orbit,.aj-phone-gallery.has-reel .aj-gallery-float{display:none}
+.aj-kisaan-shot{background:linear-gradient(135deg,#e4f2ce,#b6d28b)}.aj-kisaan-shot b{color:#26482c}
+@media(max-width:760px){.aj-project-reel{width:min(100%,300px);height:390px;max-height:390px}}
+
 /* Additional AJ portfolio projects */
 .aj-project-school{background:radial-gradient(circle at 82% 32%,#f1bd7a66,transparent 36%),linear-gradient(120deg,#3b3024,#1d1a20);color:#fff;text-decoration:none}
 .aj-project-android{background:radial-gradient(circle at 82% 30%,#7bc5a866,transparent 36%),linear-gradient(120deg,#1d3b34,#111c20);color:#fff;text-decoration:none}
@@ -758,7 +772,7 @@ footer a:hover{color:#e99b75!important}
    <span class="brand-name">AJ Creators<small>& CREATORS</small></span>
   </a>
   <nav class="navlinks" id="navlinks" aria-label="Main navigation">
-   <a href="#services">Services</a><a href="#work">Selected work</a><a href="#about">Studio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+   <a href="#services">Services</a><a href="#work">Projects</a><a href="#about">Studio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="https://www.instagram.com/aj_creators.in/" target="_blank" rel="noopener noreferrer" aria-label="AJ Creators on Instagram">Instagram ↗</a>
   </nav>
   <a class="nav-cta" href="#contact">Start a project <span>↗</span></a>
   <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -903,6 +917,7 @@ footer a:hover{color:#e99b75!important}
    </div>
    <div class="aj-phone-gallery" id="aj-phone-gallery">
     <div class="aj-gallery-orbit"></div>
+    <video class="aj-project-reel" id="aj-project-reel" controls playsinline preload="metadata" poster="./kisaan_mitra_screen_poster.jpg" aria-label="Kisaan Mitra promotional reel"><source src="./kisaan_mitra_screen_only.mp4" type="video/mp4">Your browser does not support embedded video. <a href="./kisaan_mitra_screen_only.mp4">Open the Kisaan Mitra reel</a>.</video>
     <div class="aj-phone-3d" id="aj-phone-3d">
      <div class="aj-phone-frame"><div class="aj-phone-screen" id="aj-phone-screen">
       <div class="aj-shot-status"><span>9:41</span><span>●●● ▰</span></div>
@@ -982,6 +997,10 @@ footer a:hover{color:#e99b75!important}
  <div class="wrap">
   <div class="section-head reveal"><span class="kicker">02 / Selected concepts</span><h2>Ideas you can almost <span class="gradient">touch.</span></h2><p>A glimpse of the digital experiences we can shape. These are concept showcases that demonstrate possible product directions, not claims of launched client deployments.</p></div>
   <div class="work-grid">
+   <article class="work-card reveal aj-work-explore aj-kisaan-card" data-project="kisaan" tabindex="0" role="button" aria-label="Explore Kisaan Mitra Smart Farming App and promotional reel">
+    <div class="work-art aj-kisaan-art"><div class="aj-kisaan-sun"></div><div class="aj-kisaan-field"><i></i><i></i><i></i><i></i><i></i></div><div class="aj-kisaan-phone"><span>🌾</span><b>Kisaan<br>Mitra</b><small>SMART FARMING</small></div><span class="aj-kisaan-play" aria-hidden="true">▶</span></div>
+    <div class="work-meta"><span class="label">AgriTech · Smart farming app</span><h3>Kisaan Mitra.</h3><p>A farmer-focused mobile app concept bringing digital tools and modern agriculture together. Watch the promotional reel in the project preview.</p><span class="aj-work-explore-label">WATCH PROJECT REEL ↗</span></div>
+   </article>
    <article class="work-card large reveal aj-work-explore" data-project="farm" tabindex="0" role="button" aria-label="Explore AJ Farm / Everyday made fresher preview">
     <div class="work-art green"><div class="phone-mock"><div class="phone-screen"><img class="aj-mark-img" src="./aj-creators-professional-logo.png" alt="AJ Creators logo"><div class="phone-title">Fresh, every day.</div><div class="phone-sub">A simple way to order farm-fresh essentials.</div><div class="phone-action">Explore products</div><div class="phone-sub" style="margin-top:12px">Subscriptions · Delivery · Easy payments</div></div></div></div>
     <div class="work-meta"><span class="label">Commerce · Mobile app concept</span><h3>AJ Farm / Everyday made fresher.</h3><p>A dairy ordering experience with product selection, recurring subscriptions, delivery slots, customer accounts and a simple business dashboard.</p><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
@@ -1080,7 +1099,7 @@ footer a:hover{color:#e99b75!important}
 <footer class="footer">
  <div class="wrap"><div class="footer-row">
   <a class="brand" href="#home"><img class="aj-mark-img" src="./aj-creators-professional-logo.png" alt="AJ Creators logo"><span class="brand-name">AJ Creators<small>& CREATORS</small></span></a>
-  <nav class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">Studio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
+  <nav class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">Studio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="https://www.instagram.com/aj_creators.in/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav>
  </div><div class="copyright"><span>© <span id="year"></span> AJ Creators. All rights reserved.</span><span>IDEAS, MADE REMARKABLE. · HYDERABAD, INDIA</span></div></div>
 </footer>
 <a class="whatsapp-float" href="https://wa.me/919704770375?text=Hi%20AJ%20Creators%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><span>◉</span> <span class="whats-text">Let's talk on WhatsApp</span></a>
@@ -1196,8 +1215,9 @@ if(window.matchMedia("(pointer:fine)").matches){
  const title=document.getElementById('aj-modal-title'),desc=document.getElementById('aj-modal-desc'),
        kicker=document.getElementById('aj-modal-kicker'),content=document.getElementById('aj-shot-content'),
        index=document.getElementById('aj-shot-index'),phone=document.getElementById('aj-phone-3d'),
-       tags=document.getElementById('aj-modal-tags'),repoLink=document.getElementById('aj-modal-repo');
+       tags=document.getElementById('aj-modal-tags'),repoLink=document.getElementById('aj-modal-repo'),reelGallery=document.getElementById('aj-phone-gallery'),reel=document.getElementById('aj-project-reel'),modalControls=document.querySelector('.aj-modal-controls'),modalDisclaimer=document.querySelector('.aj-modal-disclaimer');
  const projects={
+  kisaan:{name:'Kisaan Mitra',type:'PROJECT PREVIEW / SMART FARMING APP',description:'A farmer-focused mobile app concept exploring how digital tools can make everyday agriculture more connected and accessible. Watch the supplied promotional reel.',tags:['AgriTech','Smart farming','Mobile app'],reel:true,shots:['<div class="aj-shot-brand"><b>Kisaan Mitra</b><small>Smart farming</small></div><div class="aj-shot-hero aj-kisaan-shot"><small>TECHNOLOGY FOR FARMERS</small><b>Grow smarter,<br>together.</b><i>🌱</i></div><div class="aj-shot-section-title">A digital farming companion</div><div class="aj-shot-order"><span class="status">● KISAAN MITRA</span><b>Modern agriculture, made more accessible.</b><p>Promotional reel available in this project preview.</p></div>']},
   farm:{name:"Jaanu Farm's",repo:'https://github.com/Anudeepjadi/Jaanu-s-Farm',type:'PROJECT PREVIEW / MOBILE APP',description:'A concept for a simple farm-to-home ordering experience: browse fresh products, add to basket and follow an order.',tags:['Flutter concept','Shopping flow','Mobile UX'],shots:[
    `<div class="aj-shot-brand"><b>Jaanu Farm's</b><small>Fresh every day</small></div><div class="aj-shot-hero"><small>FRESH FROM OUR FARM</small><b>Goodness, delivered.</b><i>✿</i></div><div class="aj-shot-section-title">Shop by category</div><div class="aj-shot-products"><div class="aj-shot-product"><div class="produce">🥛</div><b>Cow Milk</b><small>Fresh & pure</small></div><div class="aj-shot-product"><div class="produce">🥛</div><b>Buffalo Milk</b><small>Rich & creamy</small></div></div><div class="aj-shot-action">Explore products</div>`,
    `<div class="aj-shot-brand"><b>Explore products</b><small>See all</small></div><div class="aj-shot-search">⌕  Search milk and dairy</div><div class="aj-shot-products"><div class="aj-shot-product"><div class="produce">🥛</div><b>Organic Cow Milk</b><small>₹ 65 / litre</small></div><div class="aj-shot-product"><div class="produce">🧈</div><b>Farm Butter</b><small>₹ 120 / pack</small></div><div class="aj-shot-product"><div class="produce">🥣</div><b>Fresh Curd</b><small>₹ 45 / cup</small></div><div class="aj-shot-product"><div class="produce">🧀</div><b>Paneer</b><small>₹ 90 / pack</small></div></div>`,
@@ -1237,12 +1257,13 @@ if(window.matchMedia("(pointer:fine)").matches){
   const p=projects[active];if(!p)return;
   title.textContent=p.name;desc.textContent=p.description;kicker.textContent=p.type;
   tags.innerHTML=p.tags.map(t=>`<span>${t}</span>`).join('');
+  reelGallery.classList.toggle('has-reel',!!p.reel);modalControls.hidden=!!p.reel;modalDisclaimer.textContent=p.reel?'Kisaan Mitra · Promotional reel':'Illustrative UI preview · open the linked repository for the source project';reel.pause();reel.currentTime=0;
   repoLink.hidden=!p.repo;if(p.repo)repoLink.href=p.repo;
   content.innerHTML=p.shots[shot];index.textContent=`0${shot+1} / 0${p.shots.length}`;
   phone.animate([{transform:'rotateY(-15deg) rotateX(5deg) rotateZ(-3deg) scale(.96)',opacity:.6},{transform:'rotateY(-15deg) rotateX(5deg) rotateZ(-3deg) scale(1)',opacity:1}],{duration:380,easing:'cubic-bezier(.2,.8,.2,1)'});
  };
  const open=id=>{if(!projects[id])return;active=id;shot=0;render();modal.classList.add('is-open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'};
- const close=()=>{modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');document.body.style.overflow=''};
+ const close=()=>{modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';reel.pause()};
  document.querySelectorAll('.aj-project-open').forEach(b=>b.addEventListener('click',()=>open(b.dataset.project)));
  document.querySelectorAll('.aj-work-explore').forEach(card=>{
   card.addEventListener('click',e=>{if(e.target.closest('a,button'))return;open(card.dataset.project)});
@@ -1260,3 +1281,5 @@ if(window.matchMedia("(pointer:fine)").matches){
 </script>
 
 </body></html>
+
+
