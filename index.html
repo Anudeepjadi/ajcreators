@@ -769,6 +769,16 @@ footer a:hover{color:#e99b75!important}
  body>.topbar,body>header,body>nav{display:block!important}
  body .hero,body #aj-story,body #services,body #work,body #about,body #pricing,body #process,body #contact,body .ticker,body footer{display:block!important}
 }
+
+/* Project budgets and honest review invitation */
+.project-estimate{display:block;margin-top:12px;color:#f1bd98;font:10px "DM Mono",monospace;letter-spacing:.035em;line-height:1.5}
+.reviews-card{position:relative;display:grid;grid-template-columns:68px 1fr auto;align-items:center;gap:22px;padding:30px;border:1px solid #ffffff20;border-radius:24px;background:linear-gradient(125deg,#151a2a,#10131c 66%,#1a2724);box-shadow:0 22px 65px #0005}
+.reviews-mark{width:62px;height:62px;border-radius:20px;display:grid;place-items:center;background:linear-gradient(145deg,#e99a72,#a25743);color:#17121a;font-size:27px}
+.reviews-label{font:9px "DM Mono",monospace;letter-spacing:.16em;color:var(--mint)}
+.reviews-card h3{margin:7px 0;font:600 22px "Space Grotesk",sans-serif}.reviews-card p{margin:0 0 15px;color:#aab3c5;font-size:12px;max-width:560px}
+.reviews-status{font:8px "DM Mono",monospace;letter-spacing:.12em;color:#8992a4;text-align:right}
+@media(max-width:760px){.reviews-card{grid-template-columns:48px 1fr;gap:14px;padding:22px}.reviews-mark{width:46px;height:46px;border-radius:15px}.reviews-card h3{font-size:18px}.reviews-status{grid-column:2;text-align:left}.project-estimate{font-size:9px}}
+
 </style>
 </head>
 <body>
@@ -779,7 +789,7 @@ footer a:hover{color:#e99b75!important}
    <span class="brand-name">AJ Creators<small>& CREATORS</small></span>
   </a>
   <nav class="navlinks" id="navlinks" aria-label="Main navigation">
-   <a href="#services">Services</a><a href="#work">Projects</a><a href="#about">Studio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="https://www.instagram.com/aj_creators.in/" target="_blank" rel="noopener noreferrer" aria-label="AJ Creators on Instagram">Instagram ↗</a>
+   <a href="#services">Services</a><a href="#work">Projects</a><a href="#about">Studio</a><a href="#pricing">Project scope</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a><a href="https://www.instagram.com/aj_creators.in/" target="_blank" rel="noopener noreferrer" aria-label="AJ Creators on Instagram">Instagram ↗</a>
   </nav>
   <a class="nav-cta" href="#contact">Start a project <span>↗</span></a>
   <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -812,102 +822,6 @@ footer a:hover{color:#e99b75!important}
  </div>
  <div class="scroll-cue">SCROLL TO EXPLORE</div>
 </section>
-
-<!-- AJ MOBILE PHONE EXPERIENCE START -->
-<div class="aj-mobile-experience" id="aj-mobile-experience">
-  <section class="aj-lock-screen" id="aj-lock-screen">
-    <div class="aj-lock-wallpaper"></div>
-    <div class="aj-lock-status"><span>AJ CREATORS</span><span>● ● ●  ▰</span></div>
-    <div class="aj-lock-content">
-      <div class="aj-lock-date">YOUR DIGITAL CREATIVE STUDIO</div>
-      <div class="aj-lock-time" id="aj-lock-time">09:41</div>
-      <div class="aj-lock-greeting">Ideas deserve<br><em>a beautiful screen.</em></div>
-      <div class="aj-lock-mark">AJ<span>✳</span></div>
-    </div>
-    <button class="aj-unlock" id="aj-unlock" type="button"><span class="aj-unlock-icon">↑</span> Tap to unlock AJ Creators</button>
-    <div class="aj-lock-bottom"><span>DESIGN · BUILD · CREATE</span><span>SWIPE UP TO EXPLORE</span></div>
-  </section>
-  <div class="aj-mobile-app" id="aj-mobile-app">
-    <header class="aj-mobile-header"><a href="#aj-mobile-projects" class="aj-mobile-brand"><b>AJ</b><span>CREATORS</span></a><span class="aj-mobile-live"><i></i> DIGITAL STUDIO</span></header>
-    <main class="aj-mobile-screens" id="aj-mobile-screens">
-      <section class="aj-mobile-screen aj-screen-projects" id="aj-mobile-projects" data-screen="01">
-        <div class="aj-mobile-eyebrow">01 / THE SHOWCASE</div>
-        <div class="aj-mobile-heading">Ideas made<br><em>visible.</em></div>
-        <p>Explore the digital experiences we can bring to life.</p>
-        <div class="aj-mobile-project-stack">
-          <button type="button" class="aj-project-visual aj-project-farm aj-project-open" data-project="farm" aria-label="Open Jaanu Farm's mobile app preview"><span>01 / MOBILE APP · TAP TO EXPLORE</span><b>Jaanu Farm's</b><small>Fresh. Local. Connected.</small><div class="aj-farm-orb">✳</div><i class="aj-project-open-icon">↗</i></button>
-          <button type="button" class="aj-project-visual aj-project-dashboard aj-project-open" data-project="dashboard" aria-label="Open business dashboard preview"><span>02 / BUSINESS SOFTWARE · TAP TO EXPLORE</span><b>One view.<br>More clarity.</b><div class="aj-mini-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><i class="aj-project-open-icon">↗</i></button>
-          <button type="button" class="aj-project-visual aj-project-notes aj-project-open" data-project="notes" aria-label="Open Secure Notes preview"><span>03 / PRODUCTIVITY · TAP TO EXPLORE</span><b>Secure Notes</b><small>Your thoughts, protected.</small><div class="aj-note-lines"></div><i class="aj-project-open-icon">↗</i></button>
-          <button type="button" class="aj-project-visual aj-project-school aj-project-open" data-project="school" aria-label="Explore ERS School app preview"><span>04 / EDUCATION · TAP TO EXPLORE</span><b>ERS School</b><small>School app · student life</small><div class="aj-school-crest">E</div><i class="aj-project-open-icon">↗</i></button>
-          <button type="button" class="aj-project-visual aj-project-android aj-project-open" data-project="android" aria-label="Explore Now in Android app preview"><span>05 / ANDROID · TAP TO EXPLORE</span><b>Now in Android</b><small>Stories, topics & updates</small><div class="aj-android-symbol">A</div><i class="aj-project-open-icon">↗</i></button>
-                  </div>
-        <div class="aj-mobile-scroll-hint">SCROLL TO DISCOVER <span>↓</span></div>
-      </section>
-      <section class="aj-mobile-screen aj-screen-required" id="aj-mobile-required" data-screen="02">
-        <div class="aj-mobile-eyebrow">02 / WHAT YOU NEED</div>
-        <div class="aj-mobile-heading">What do you<br><em>want to build?</em></div>
-        <p>Choose a starting point. We shape the right solution around your goals.</p>
-        <div class="aj-need-list">
-          <div><span>01</span><b>Mobile application</b><i>↗</i></div>
-          <div><span>02</span><b>Website / web platform</b><i>↗</i></div>
-          <div><span>03</span><b>Business dashboard</b><i>↗</i></div>
-          <div><span>04</span><b>AI & automation</b><i>↗</i></div>
-          <div><span>05</span><b>Custom software</b><i>↗</i></div>
-        </div>
-        <div class="aj-mobile-note">START WITH THE PROBLEM. WE'LL HELP WITH THE SOLUTION.</div>
-      </section>
-      <section class="aj-mobile-screen aj-screen-plans" id="aj-mobile-plans" data-screen="03">
-        <div class="aj-mobile-eyebrow">03 / THE APPROACH</div>
-        <div class="aj-mobile-heading">A clear plan.<br><em>Every step.</em></div>
-        <p>From first conversation to launch, your project moves with purpose.</p>
-        <div class="aj-plan-timeline">
-          <div><span>01</span><section><b>Discover</b><small>Understand your idea, users and goals.</small></section></div>
-          <div><span>02</span><section><b>Design</b><small>Shape the experience and technical plan.</small></section></div>
-          <div><span>03</span><section><b>Build</b><small>Develop, test and refine the product.</small></section></div>
-          <div><span>04</span><section><b>Launch</b><small>Deploy and support your next step.</small></section></div>
-        </div>
-        <div class="aj-plan-stamp">IDEA → DESIGN → BUILD → LAUNCH</div>
-      </section>
-      <section class="aj-mobile-screen aj-screen-cost" id="aj-mobile-cost" data-screen="04">
-        <div class="aj-mobile-eyebrow">04 / ESTIMATION COST</div>
-        <div class="aj-mobile-heading">Built around<br><em>your budget.</em></div>
-        <p>Every estimate starts with scope, features and complexity. No one-size-fits-all pricing.</p>
-        <div class="aj-cost-card">
-          <span>PROJECT ESTIMATE</span><b>Let's scope<br>your idea.</b>
-          <div class="aj-cost-line"><i></i></div>
-          <small>Features · Timeline · Platform · Support</small>
-          <a href="#contact" class="aj-mobile-cta">Request an estimate <b>↗</b></a>
-        </div>
-        <div class="aj-cost-foot">CLEAR SCOPE. TRANSPARENT ESTIMATE. NO SURPRISES.</div>
-      </section>
-      <section class="aj-mobile-screen aj-screen-ideas" id="aj-mobile-ideas" data-screen="05">
-        <div class="aj-mobile-eyebrow">05 / SMART IDEAS</div>
-        <div class="aj-mobile-heading">Think bigger.<br><em>Build smarter.</em></div>
-        <p>Bring us the rough idea. We'll help turn it into a useful digital product.</p>
-        <div class="aj-idea-orbit"><div class="aj-idea-core">AJ</div><span class="aj-idea-chip chip-one">AI</span><span class="aj-idea-chip chip-two">APP</span><span class="aj-idea-chip chip-three">WEB</span><span class="aj-idea-chip chip-four">UX</span></div>
-        <div class="aj-idea-tags"><span>CREATIVE THINKING</span><span>USEFUL TECHNOLOGY</span><span>REAL-WORLD IMPACT</span></div>
-        <a href="#contact" class="aj-mobile-cta aj-idea-cta">Let's build your idea <b>↗</b></a>
-      </section>
-      <section class="aj-mobile-screen aj-screen-contact" id="aj-mobile-contact" data-screen="06">
-        <div class="aj-mobile-eyebrow">06 / START A CONVERSATION</div>
-        <div class="aj-mobile-heading">Your idea<br><em>starts here.</em></div>
-        <p>Tell us what you're imagining. Let's make a plan together.</p>
-        <a class="aj-mobile-contact-link" href="mailto:anudeepjanu.22@gmail.com">anudeepjanu.22@gmail.com <b>↗</b></a>
-        <a class="aj-mobile-contact-link" href="https://wa.me/919704770375" target="_blank" rel="noopener">Chat on WhatsApp <b>↗</b></a>
-        <div class="aj-mobile-footer-mark">AJ<span>✳</span></div>
-        <small>AJ CREATORS · HYDERABAD, INDIA</small>
-      </section>
-    </main>
-    <nav class="aj-mobile-dock" aria-label="Mobile section navigation">
-      <a href="#aj-mobile-projects" class="active"><span>▦</span>Projects</a>
-      <a href="#aj-mobile-required"><span>⌘</span>Required</a>
-      <a href="#aj-mobile-plans"><span>↗</span>Plans</a>
-      <a href="#aj-mobile-cost"><span>₹</span>Estimation</a>
-      <a href="#aj-mobile-ideas"><span>✳</span>Ideas</a>
-    </nav>
-  </div>
-</div>
-<!-- AJ MOBILE PHONE EXPERIENCE END -->
 
 <!-- AJ PROJECT 3D PREVIEW MODAL -->
 <div class="aj-project-modal" id="aj-project-modal" aria-hidden="true">
@@ -1002,41 +916,24 @@ footer a:hover{color:#e99b75!important}
 
 <section class="section alt" id="work">
  <div class="wrap">
-  <div class="section-head reveal"><span class="kicker">02 / Selected concepts</span><h2>Ideas you can almost <span class="gradient">touch.</span></h2><p>A glimpse of the digital experiences we can shape. These are concept showcases that demonstrate possible product directions, not claims of launched client deployments.</p></div>
+  <div class="section-head reveal"><span class="kicker">02 / Projects we have built</span><h2>Ideas you can almost <span class="gradient">touch.</span></h2><p>A selection of AJ Creators projects. See the apps and digital experiences we have built, then tell us what you would like to make next.</p></div>
   <div class="work-grid">
    <article class="work-card reveal aj-work-explore aj-kisaan-card" data-project="kisaan" tabindex="0" role="button" aria-label="Explore Kisaan Mitra Smart Farming App and promotional reel">
     <div class="work-art aj-kisaan-art"><div class="aj-kisaan-sun"></div><div class="aj-kisaan-field"><i></i><i></i><i></i><i></i><i></i></div><div class="aj-kisaan-phone"><span>🌾</span><b>Kisaan<br>Mitra</b><small>SMART FARMING</small></div><span class="aj-kisaan-play" aria-hidden="true">▶</span></div>
-    <div class="work-meta"><span class="label">AgriTech · Smart farming app</span><h3>Kisaan Mitra.</h3><p>A farmer-focused mobile app concept bringing digital tools and modern agriculture together. Watch the promotional reel in the project preview.</p><span class="aj-work-explore-label">WATCH PROJECT REEL ↗</span></div>
+    <div class="work-meta"><span class="label">AgriTech · Smart farming app</span><h3>Kisaan Mitra.</h3><p>A smart farming app built to bring modern agriculture tools, farm insights and useful services together for Indian farmers. Watch the project reel in the preview.</p><span class="aj-work-explore-label">WATCH PROJECT REEL ↗</span></div>
    </article>
    <article class="work-card large reveal aj-work-explore" data-project="farm" tabindex="0" role="button" aria-label="Explore AJ Farm / Everyday made fresher preview">
     <div class="work-art green"><div class="phone-mock"><div class="phone-screen"><img class="aj-mark-img" src="./aj-creators-professional-logo.png" alt="AJ Creators logo"><div class="phone-title">Fresh, every day.</div><div class="phone-sub">A simple way to order farm-fresh essentials.</div><div class="phone-action">Explore products</div><div class="phone-sub" style="margin-top:12px">Subscriptions · Delivery · Easy payments</div></div></div></div>
-    <div class="work-meta"><span class="label">Commerce · Mobile app concept</span><h3>AJ Farm / Everyday made fresher.</h3><p>A dairy ordering experience with product selection, recurring subscriptions, delivery slots, customer accounts and a simple business dashboard.</p><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
-   </article>
-   <article class="work-card reveal aj-work-explore" data-project="dashboard" tabindex="0" role="button" aria-label="Explore Business in focus preview">
-    <div class="work-art"><div class="mock-window"><div class="mock-head"><span>BUSINESS / OVERVIEW</span><span>•••</span></div><div class="mock-banner">Know your business.</div><div class="mock-bars"><i></i><i></i><i></i></div><div class="mock-chart"></div></div></div>
-    <div class="work-meta"><span class="label">Operations · Web dashboard concept</span><h3>Business in focus.</h3><p>One clear workspace for orders, customers, inventory and business insights.</p><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
-   </article>
-   <article class="work-card reveal aj-work-explore" data-project="notes" tabindex="0" role="button" aria-label="Explore Secure Notes preview">
-    <div class="work-art warm"><div class="note-ui"><span class="note-tag">PRIVATE SPACE</span><h4>Your thoughts.<br>Your space.</h4><div class="note-line"></div><div class="note-line"></div><div class="note-line"></div><span class="note-tag">Encrypted notes concept</span></div></div>
-    <div class="work-meta"><span class="label">Productivity · Android app concept</span><h3>Secure Notes.</h3><p>A focused notes experience with privacy-minded design, organisation and a calm writing flow.</p><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
+    <div class="work-meta"><span class="label">Commerce · Mobile app</span><h3>AJ Farm / Everyday made fresher.</h3><p>A farm-to-home ordering app built around fresh products, subscriptions, delivery slots, customer accounts and a simple business dashboard.</p><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
    </article>
    <article class="work-card reveal aj-work-explore" data-project="school" tabindex="0" role="button" aria-label="Explore ERS School preview">
     <div class="aj-work-link">
      <div class="work-art aj-school-art"><div class="aj-school-screen"><div class="aj-school-top">ERS <span>✦</span></div><div class="aj-school-crest">E</div><b>Learning<br>starts here.</b><small>SCHOOL MANAGEMENT · FLUTTER</small><div class="aj-school-pills"><i>Students</i><i>Classes</i><i>Updates</i></div></div></div>
-     <div class="work-meta"><span class="label">Education · Flutter project</span><h3>ERS School.</h3><p>A school-focused Flutter application project. Explore the source, assets and implementation on GitHub.</p><span class="aj-github-cta">GITHUB LINK IN PREVIEW ↗</span><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
+     <div class="work-meta"><span class="label">Education · Flutter project</span><h3>ERS School.</h3><p>A Flutter school app project for everyday school information, student services and a clear mobile experience. Explore the project source on GitHub.</p><span class="aj-github-cta">GITHUB LINK IN PREVIEW ↗</span><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
     </div>
    </article>
-   <article class="work-card reveal aj-work-explore" data-project="android" tabindex="0" role="button" aria-label="Explore Now in Android preview">
-    <div class="aj-work-link">
-     <div class="work-art aj-android-art"><div class="aj-android-screen"><div class="aj-android-top"><b>Now in Android</b><span>⌕</span></div><div class="aj-android-feature"><small>DEVELOPMENT · DESIGN · COMMUNITY</small><b>Stay in the<br>Android loop.</b></div><div class="aj-android-feed"><i></i><i></i><i></i></div></div></div>
-     <div class="work-meta"><span class="label">Android · GitHub repository</span><h3>Now in Android.</h3><p>Explore the Android project repository and its implementation details on GitHub.</p><span class="aj-github-cta">GITHUB LINK IN PREVIEW ↗</span><span class="aj-work-explore-label">TAP TO EXPLORE ↗</span></div>
-    </div>
-   </article>
-
-   
-
-  </div>
-  <p class="disclaimer">CONCEPT VISUALS · FEATURES, SCOPE AND TECHNICAL APPROACH ARE CONFIRMED PER CLIENT PROJECT.</p>
+   </div>
+  <p class="disclaimer">SELECTED PROJECTS BUILT BY AJ CREATORS · PROJECT DETAILS ON REQUEST.</p>
  </div>
 </section>
 
@@ -1051,16 +948,22 @@ footer a:hover{color:#e99b75!important}
 
 <section class="section alt" id="pricing">
  <div class="wrap">
-  <div class="section-head reveal"><span class="kicker">04 / Straightforward starting points</span><h2>Start with what you need.<br><span class="gradient">Grow when you're ready.</span></h2><p>Every project is different. These are planning guides to help start the conversation; final pricing follows a requirements review and written scope.</p></div>
+  <div class="section-head reveal"><span class="kicker">04 / Clear project options</span><h2>Start with what you need.<br><span class="gradient">Grow when you're ready.</span></h2><p>Every project is different. We’ll understand your goals, agree on a written scope and then prepare a clear estimate.</p></div>
   <div class="pricing-grid">
-   <article class="price-card reveal"><span class="tag">A CLEAR FIRST STEP</span><h3>Launchpad</h3><p>For a focused landing page or a simple business presence.</p><div class="price">From ₹12,000<small> / project</small></div><ul><li>Responsive website</li><li>Core pages and contact CTA</li><li>Basic SEO setup</li><li>Enquiry link integration</li><li>Launch handover</li></ul><a class="button ghost" href="#contact" data-plan="Launchpad website">Discuss this plan ↗</a></article>
-   <article class="price-card featured reveal"><span class="tag">MOST FLEXIBLE</span><h3>Business Builder</h3><p>For a business workflow that needs a custom digital tool.</p><div class="price">From ₹35,000<small> / project</small></div><ul><li>Requirements and user flows</li><li>Core app or dashboard screens</li><li>Database / API planning</li><li>Testing and milestone reviews</li><li>Deployment guidance</li></ul><a class="button primary" href="#contact" data-plan="Business Builder app">Plan my project ↗</a></article>
-   <article class="price-card reveal"><span class="tag">BUILT AROUND YOU</span><h3>Custom Product</h3><p>For multi-feature apps, integrations or more complex systems.</p><div class="price">Let's scope it<small> / custom quote</small></div><ul><li>Discovery and detailed scope</li><li>Architecture and integrations</li><li>Milestone-based development</li><li>QA and release support</li><li>Optional ongoing care</li></ul><a class="button ghost" href="#contact" data-plan="Custom Product">Get a custom estimate ↗</a></article>
+   <article class="price-card reveal"><span class="tag">A CLEAR FIRST STEP</span><h3>Launchpad</h3><p>For a focused landing page or a simple business presence.</p><div class="price">Let’s scope your website<small> / written estimate</small></div><ul><li>Responsive website</li><li>Core pages and contact CTA</li><li>Basic SEO setup</li><li>Enquiry link integration</li><li>Launch handover</li></ul><a class="button ghost" href="#contact" data-plan="Launchpad website">Discuss this plan ↗</a></article>
+   <article class="price-card featured reveal"><span class="tag">MOST FLEXIBLE</span><h3>Business Builder</h3><p>For a business workflow that needs a custom digital tool.</p><div class="price">Plan your web project<small> / written estimate</small></div><ul><li>Requirements and user flows</li><li>Core website or dashboard screens</li><li>Database / API planning</li><li>Testing and milestone reviews</li><li>Deployment guidance</li></ul><a class="button primary" href="#contact" data-plan="Business Builder app">Plan my project ↗</a></article>
+   <article class="price-card reveal"><span class="tag">BUILT AROUND YOU</span><h3>Custom Product</h3><p>For multi-feature apps, integrations or more complex systems.</p><div class="price">Let’s scope your app<small> / written estimate</small></div><ul><li>Discovery and detailed scope</li><li>Architecture and integrations</li><li>Milestone-based development</li><li>QA and release support</li><li>Optional ongoing care</li></ul><a class="button ghost" href="#contact" data-plan="Custom Product">Get a custom estimate ↗</a></article>
   </div>
   <p class="price-note">Indicative starting prices only. Hosting, paid third-party services, app-store fees, taxes and ongoing support are quoted separately where applicable.</p>
  </div>
 </section>
 
+<section class="section alt" id="reviews">
+ <div class="wrap">
+  <div class="section-head reveal"><span class="kicker">05 / Client feedback</span><h2>Good work is better<br>when it’s <span class="gradient">remembered.</span></h2><p>We’re collecting feedback from people who have worked with AJ Creators. We’ll publish reviews here with permission.</p></div>
+  <article class="reviews-card reveal"><div class="reviews-mark">✳</div><div><span class="reviews-label">CLIENT REVIEWS</span><h3>Have we built something together?</h3><p>Your honest feedback helps future clients understand what it’s like to work with us.</p><a class="button ghost" href="mailto:ajcreations.services@gmail.com?subject=AJ%20Creators%20client%20review">Share your feedback ↗</a></div><span class="reviews-status">REAL WORDS · SHARED WITH PERMISSION</span></article>
+ </div>
+</section>
 <section class="section" id="process">
  <div class="wrap">
   <div class="section-head reveal"><span class="kicker">05 / How good ideas get made</span><h2>A little clarity.<br><span class="gradient">A lot more momentum.</span></h2><p>No jargon-heavy handoffs. Just a shared plan, visible progress and clear decisions at each stage.</p></div>
@@ -1080,7 +983,7 @@ footer a:hover{color:#e99b75!important}
    <h2>Let's make<br><span class="gradient">something matter.</span></h2>
    <p>Tell us what you're trying to improve. You don't need a perfect brief — we'll help turn the first conversation into clear requirements, a realistic plan and a project estimate.</p>
    <div class="contact-methods">
-    <a class="contact-method" href="mailto:anudeepjanu.22@gmail.com"><i>✉</i><span><small>WRITE TO US</small><b>anudeepjanu.22@gmail.com</b></span></a>
+    <a class="contact-method" href="mailto:ajcreations.services@gmail.com"><i>✉</i><span><small>WRITE TO US</small><b>ajcreations.services@gmail.com</b></span></a>
     <a class="contact-method" href="tel:+919704770375"><i>↗</i><span><small>CALL / WHATSAPP</small><b>+91 9704770375</b></span></a>
     <div class="contact-method"><i>⌖</i><span><small>BASED IN</small><b>Hyderabad, Telangana · Serving India</b></span></div>
    </div>
@@ -1093,7 +996,7 @@ footer a:hover{color:#e99b75!important}
     <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
     <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="+91"></div>
     <div class="field"><label for="service">What are you imagining? *</label><select id="service" name="service" required><option value="">Choose a starting point</option><option>Mobile app</option><option>Business website</option><option>Business software / dashboard</option><option>AI / automation</option><option>Existing product improvements</option><option>Not sure — help me explore</option></select></div>
-    <div class="field"><label for="budget">Budget range</label><select id="budget" name="budget"><option value="">Let's discuss</option><option>Below ₹25,000</option><option>₹25,000–₹75,000</option><option>₹75,000–₹2,00,000</option><option>Above ₹2,00,000</option><option>Need guidance</option></select></div>
+    <div class="field"><label for="projectType">Project type</label><select id="projectType" name="projectType"><option value="">Choose a project type</option><option>Website</option><option>Mobile app</option><option>Web app or dashboard</option><option>Commerce / ordering app</option><option>Not sure yet</option></select></div>
     <div class="field full"><label for="details">What would you like to make easier? *</label><textarea id="details" name="details" required placeholder="Tell us about your business, the problem you're facing and what a better solution would look like..."></textarea></div>
    </div>
    <button class="button primary" type="submit">Send project enquiry <span>↗</span></button>
@@ -1106,7 +1009,7 @@ footer a:hover{color:#e99b75!important}
 <footer class="footer">
  <div class="wrap"><div class="footer-row">
   <a class="brand" href="#home"><img class="aj-mark-img" src="./aj-creators-professional-logo.png" alt="AJ Creators logo"><span class="brand-name">AJ Creators<small>& CREATORS</small></span></a>
-  <nav class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">Studio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="https://www.instagram.com/aj_creators.in/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav>
+  <nav class="footer-links"><a href="#services">Services</a><a href="#work">Projects</a><a href="#about">Studio</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a><a href="./aj-creators-project-poster.svg" target="_blank" rel="noopener">Project poster ↗</a><a href="https://www.instagram.com/aj_creators.in/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav>
  </div><div class="copyright"><span>© <span id="year"></span> AJ Creators. All rights reserved.</span><span>IDEAS, MADE REMARKABLE. · HYDERABAD, INDIA</span></div></div>
 </footer>
 <a class="whatsapp-float" href="https://wa.me/919704770375?text=Hi%20AJ%20Creators%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><span>◉</span> <span class="whats-text">Let's talk on WhatsApp</span></a>
@@ -1139,7 +1042,7 @@ document.getElementById("leadForm").addEventListener("submit",e=>{
  const subject=encodeURIComponent("Project enquiry — "+d.get("service"));
  const body=encodeURIComponent(`Name: ${d.get("name")}\nBusiness: ${d.get("business")}\nEmail: ${d.get("email")}\nPhone: ${d.get("phone")}\nService: ${d.get("service")}\nBudget: ${d.get("budget")}\n\nProject details:\n${d.get("details")}`);
  document.getElementById("formStatus").textContent="Opening your email app with your project enquiry…";
- window.location.href=`mailto:anudeepjanu.22@gmail.com?subject=${subject}&body=${body}`;
+ window.location.href=`mailto:ajcreations.services@gmail.com?subject=${subject}&body=${body}`;
 });
 const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target)}}),{threshold:.12});
 document.querySelectorAll(".reveal").forEach(el=>revealObserver.observe(el));
@@ -1189,29 +1092,6 @@ if(window.matchMedia("(pointer:fine)").matches){
  };
  const onScroll=()=>{if(!raf){raf=true;requestAnimationFrame(update)}};
  addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);update();
-})();
-</script>
-
-
-<script id="aj-mobile-phone-experience">
-(()=>{
- const screen=matchMedia('(max-width:760px)');
- if(!screen.matches)return;
- const lock=document.getElementById('aj-lock-screen'),app=document.getElementById('aj-mobile-app'),btn=document.getElementById('aj-unlock');
- if(!lock||!app||!btn)return;
- const time=document.getElementById('aj-lock-time');
- const updateTime=()=>{const d=new Date();time.textContent=d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit',hour12:false})};
- updateTime();
- btn.addEventListener('click',()=>{lock.classList.add('aj-unlocking');app.classList.add('aj-open');setTimeout(()=>{lock.style.display='none';document.getElementById('aj-mobile-screens').scrollTo({top:0,behavior:'smooth'})},850)});
- // Allow a natural swipe-up gesture to unlock.
- let startY=0;
- lock.addEventListener('touchstart',e=>{startY=e.touches[0].clientY},{passive:true});
- lock.addEventListener('touchend',e=>{if(startY-e.changedTouches[0].clientY>45)btn.click()},{passive:true});
- const scroller=document.getElementById('aj-mobile-screens'),links=[...document.querySelectorAll('.aj-mobile-dock a')];
- if(scroller&&'IntersectionObserver'in window){
-  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id))}}),{root:scroller,threshold:.55});
-  document.querySelectorAll('.aj-mobile-screen').forEach(s=>io.observe(s));
- }
 })();
 </script>
 
@@ -1288,5 +1168,7 @@ if(window.matchMedia("(pointer:fine)").matches){
 </script>
 
 </body></html>
+
+
 
 
