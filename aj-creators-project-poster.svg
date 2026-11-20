@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow1" cx="20%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#070b14" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlow2" cx="80%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#070b14" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111c35" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0b1324" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .heading { font-weight: 800; letter-spacing: -0.5px; }
+    .label { font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+  </style>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1920" height="1080" fill="#060911"/>
+  <rect width="1920" height="1080" fill="url(#bgGlow1)"/>
+  <rect width="1920" height="1080" fill="url(#bgGlow2)"/>
+
+  <!-- Subtle Blueprint Grid Pattern -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <path d="M0,120 H1920 M0,240 H1920 M0,360 H1920 M0,480 H1920 M0,600 H1920 M0,720 H1920 M0,840 H1920 M0,960 H1920" />
+    <path d="M160,0 V1080 M320,0 V1080 M480,0 V1080 M640,0 V1080 M800,0 V1080 M960,0 V1080 M1120,0 V1080 M1280,0 V1080 M1440,0 V1080 M1600,0 V1080 M1760,0 V1080" />
+  </g>
+
+  <!-- TOP HEADER -->
+  <g transform="translate(100, 70)">
+    <!-- Brand Logo Mark -->
+    <rect x="0" y="0" width="60" height="60" rx="16" fill="url(#accentGrad)" filter="url(#shadow)"/>
+    <text x="30" y="38" fill="#ffffff" font-size="28" font-weight="900" font-family="Segoe UI, sans-serif" text-anchor="middle">AJ</text>
+
+    <!-- Brand Name and Badges -->
+    <text x="78" y="34" fill="#ffffff" font-size="32" class="font-sans heading">AJ CREATORS</text>
+    <text x="78" y="54" fill="#00d4ff" class="font-sans label">DIGITAL CRAFT STUDIO · HYDERABAD, INDIA</text>
+
+    <!-- Top Right Meta -->
+    <rect x="1460" y="8" width="260" height="42" rx="21" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(0, 212, 255, 0.3)" stroke-width="1.5"/>
+    <circle cx="1485" cy="29" r="6" fill="#10b981" filter="url(#glow)"/>
+    <text x="1505" y="34" fill="#e2e8f0" font-size="14" font-weight="600" class="font-sans">Production Ready 2026</text>
+  </g>
+
+  <!-- HERO TITLE & MASTER POSITIONING -->
+  <g transform="translate(100, 180)">
+    <text x="0" y="44" fill="#ffffff" font-size="52" class="font-sans heading">We Build Digital Solutions for Businesses.</text>
+    <text x="0" y="90" fill="url(#primaryGrad)" font-size="26" font-weight="700" class="font-sans">"Tell us what problem your business faces. AJ Creators can design and build the digital solution."</text>
+    <text x="0" y="125" fill="#94a3b8" font-size="18" font-weight="400" class="font-sans">From websites and mobile apps to custom platforms and business automation—we turn ideas and operational problems into practical technology.</text>
+  </g>
+
+  <!-- 7 CORE SERVICES PILLARS (Top Section) -->
+  <g transform="translate(100, 350)">
+    <!-- Section Title -->
+    <text x="0" y="0" fill="#00d4ff" class="font-sans label">WHAT WE SELL · 7 CORE DIGITAL SERVICES</text>
+
+    <!-- Service Badges -->
+    <g transform="translate(0, 20)">
+      <!-- S1 -->
+      <g transform="translate(0, 0)">
+        <rect width="230" height="95" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1.5"/>
+        <text x="20" y="35" font-size="24">🌐</text>
+        <text x="56" y="32" fill="#ffffff" font-size="16" font-weight="700" class="font-sans">Website Dev</text>
+        <text x="20" y="65" fill="#94a3b8" font-size="12" class="font-sans">Landing pages, stores,</text>
+        <text x="20" y="80" fill="#94a3b8" font-size="12" class="font-sans">booking sites &amp; SEO</text>
+      </g>
+
+      <!-- S2 -->
+      <g transform="translate(248, 0)">
+        <rect width="230" height="95" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1.5"/>
+        <text x="20" y="35" font-size="24">📱</text>
+        <text x="56" y="32" fill="#ffffff" font-size="16" font-weight="700" class="font-sans">Mobile Apps</text>
+        <text x="20" y="65" fill="#94a3b8" font-size="12" class="font-sans">Android, iOS, Flutter,</text>
+        <text x="20" y="80" fill="#94a3b8" font-size="12" class="font-sans">live GPS &amp; accounts</text>
+      </g>
+
+      <!-- S3 -->
+      <g transform="translate(496, 0)">
+        <rect width="230" height="95" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1.5"/>
+        <text x="20" y="35" font-size="24">🖥️</text>
+        <text x="56" y="32" fill="#ffffff" font-size="16" font-weight="700" class="font-sans">Web Apps</text>
+        <text x="20" y="65" fill="#94a3b8" font-size="12" class="font-sans">Admin dashboards, portals,</text>
+        <text x="20" y="80" fill="#94a3b8" font-size="12" class="font-sans">SaaS &amp; internal tools</text>
+      </g>
+
+      <!-- S4 -->
+      <g transform="translate(744, 0)">
+        <rect width="230" height="95" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1.5"/>
+        <text x="20" y="35" font-size="24">⚙️</text>
+        <text x="56" y="32" fill="#ffffff" font-size="16" font-weight="700" class="font-sans">Automation</text>
+        <text x="20" y="65" fill="#94a3b8" font-size="12" class="font-sans">Workflow sync, APIs,</text>
+        <text x="20" y="80" fill="#94a3b8" font-size="12" class="font-sans">WhatsApp/SMS alerts</text>
+      </g>
+
+      <!-- S5 -->
+      <g transform="translate(992, 0)">
+        <rect width="230" height="95" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1.5"/>
+        <text x="20" y="35" font-size="24">🎨</text>
+        <text x="56" y="32" fill="#ffffff" font-size="16" font-weight="700" class="font-sans">UI/UX Design</text>
+        <text x="20" y="65" fill="#94a3b8" font-size="12" class="font-sans">Figma prototypes,</text>
+        <text x="20" y="80" fill="#94a3b8" font-size="12" class="font-sans">redesigns &amp; usability</text>
+      </g>
+
+      <!-- S6 -->
+      <g transform="translate(1240, 0)">
+        <rect width="230" height="95" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1.5"/>
+        <text x="20" y="35" font-size="24">🏢</text>
+        <text x="56" y="32" fill="#ffffff" font-size="16" font-weight="700" class="font-sans">Custom Software</text>
+        <text x="20" y="65" fill="#94a3b8" font-size="12" class="font-sans">ERP, CRM, inventory</text>
+        <text x="20" y="80" fill="#94a3b8" font-size="12" class="font-sans">&amp; multi-role platforms</text>
+      </g>
+
+      <!-- S7 -->
+      <g transform="translate(1488, 0)">
+        <rect width="232" height="95" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1.5"/>
+        <text x="20" y="35" font-size="24">🤖</text>
+        <text x="56" y="32" fill="#ffffff" font-size="16" font-weight="700" class="font-sans">AI Integration</text>
+        <text x="20" y="65" fill="#94a3b8" font-size="12" class="font-sans">Chatbots, smart search,</text>
+        <text x="20" y="80" fill="#94a3b8" font-size="12" class="font-sans">predictive workflows</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- SHIPPED PORTFOLIO SHOWCASE (Middle Section) -->
+  <g transform="translate(100, 510)">
+    <text x="0" y="0" fill="#8b5cf6" class="font-sans label">PROVEN PORTFOLIO · SHIPPED CODE &amp; ARCHITECTURE</text>
+
+    <!-- 3 Project Cards -->
+    <g transform="translate(0, 24)">
+      <!-- Project 1: Jaanu's Farm -->
+      <g transform="translate(0, 0)">
+        <rect width="550" height="260" rx="16" fill="url(#cardGrad)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1.5" filter="url(#shadow)"/>
+        <!-- Accent indicator -->
+        <rect x="0" y="0" width="550" height="6" rx="3" fill="#00d4ff"/>
+        
+        <text x="32" y="52" fill="#00d4ff" font-size="14" font-weight="700" class="font-sans label">COMMERCE &amp; DELIVERY</text>
+        <text x="32" y="88" fill="#ffffff" font-size="26" class="font-sans heading">Jaanu's Farm</text>
+        <text x="32" y="118" fill="#94a3b8" font-size="15" class="font-sans">Farm-to-home dairy &amp; fresh grocery subscription platform.</text>
+        
+        <!-- Feature bullets -->
+        <circle cx="40" cy="155" r="4" fill="#00d4ff"/>
+        <text x="54" y="160" fill="#cbd5e1" font-size="14" class="font-sans">Flutter mobile app (Android &amp; iOS)</text>
+        
+        <circle cx="40" cy="185" r="4" fill="#00d4ff"/>
+        <text x="54" y="190" fill="#cbd5e1" font-size="14" class="font-sans">Live Mappls GPS rider tracking &amp; morning route dispatch</text>
+
+        <circle cx="40" cy="215" r="4" fill="#00d4ff"/>
+        <text x="54" y="220" fill="#cbd5e1" font-size="14" class="font-sans">Automated subscription schedules &amp; wallet deductions</text>
+      </g>
+
+      <!-- Project 2: Ecstasy Schools ERP -->
+      <g transform="translate(585, 0)">
+        <rect width="550" height="260" rx="16" fill="url(#cardGrad)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1.5" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="550" height="6" rx="3" fill="#8b5cf6"/>
+
+        <text x="32" y="52" fill="#8b5cf6" font-size="14" font-weight="700" class="font-sans label">EDUCATION MANAGEMENT</text>
+        <text x="32" y="88" fill="#ffffff" font-size="26" class="font-sans heading">Ecstasy Schools ERP</text>
+        <text x="32" y="118" fill="#94a3b8" font-size="15" class="font-sans">Comprehensive campus ERP replacing manual paper logs.</text>
+
+        <circle cx="40" cy="155" r="4" fill="#8b5cf6"/>
+        <text x="54" y="160" fill="#cbd5e1" font-size="14" class="font-sans">Role-based portals: Superadmin, Teachers, Parents, Students</text>
+
+        <circle cx="40" cy="185" r="4" fill="#8b5cf6"/>
+        <text x="54" y="190" fill="#cbd5e1" font-size="14" class="font-sans">Integrated fee collection, receipts &amp; automated reminders</text>
+
+        <circle cx="40" cy="215" r="4" fill="#8b5cf6"/>
+        <text x="54" y="220" fill="#cbd5e1" font-size="14" class="font-sans">Live school bus GPS tracking &amp; daily attendance logs</text>
+      </g>
+
+      <!-- Project 3: Kisaan Mitra -->
+      <g transform="translate(1170, 0)">
+        <rect width="550" height="260" rx="16" fill="url(#cardGrad)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1.5" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="550" height="6" rx="3" fill="#ec4899"/>
+
+        <text x="32" y="52" fill="#ec4899" font-size="14" font-weight="700" class="font-sans label">SMART AGRITECH &amp; IOT</text>
+        <text x="32" y="88" fill="#ffffff" font-size="26" class="font-sans heading">Kisaan Mitra</text>
+        <text x="32" y="118" fill="#94a3b8" font-size="15" class="font-sans">High-concurrency AgriTech platform empowering growers.</text>
+
+        <circle cx="40" cy="155" r="4" fill="#ec4899"/>
+        <text x="54" y="160" fill="#cbd5e1" font-size="14" class="font-sans">Python FastAPI backend handling live crop market data</text>
+
+        <circle cx="40" cy="185" r="4" fill="#ec4899"/>
+        <text x="54" y="190" fill="#cbd5e1" font-size="14" class="font-sans">Live Mandi prices &amp; microclimate weather advisories</text>
+
+        <circle cx="40" cy="215" r="4" fill="#ec4899"/>
+        <text x="54" y="220" fill="#cbd5e1" font-size="14" class="font-sans">IoT soil sensor telemetry &amp; yield analytics dashboard</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- BOTTOM PRICING & CALL TO ACTION FOOTER -->
+  <g transform="translate(100, 835)">
+    <!-- Pricing Menu Card -->
+    <rect width="1070" height="175" rx="16" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.5"/>
+    <text x="32" y="38" fill="#00d4ff" class="font-sans label">TRANSPARENT PRODUCT TIERS</text>
+
+    <!-- Tier 1 -->
+    <g transform="translate(32, 60)">
+      <text x="0" y="20" fill="#ffffff" font-size="18" font-weight="700" class="font-sans">Launchpad MVP</text>
+      <text x="0" y="44" fill="#00d4ff" font-size="22" font-weight="800" class="font-sans">₹30K – ₹50K</text>
+      <text x="0" y="72" fill="#94a3b8" font-size="13" class="font-sans">Landing page / Web presence</text>
+      <text x="0" y="90" fill="#64748b" font-size="12" class="font-sans">Timeline: 1–3 weeks</text>
+    </g>
+
+    <line x1="370" y1="55" x2="370" y2="155" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+    <!-- Tier 2 -->
+    <g transform="translate(410, 60)">
+      <text x="0" y="20" fill="#ffffff" font-size="18" font-weight="700" class="font-sans">Business Builder</text>
+      <text x="0" y="44" fill="#8b5cf6" font-size="22" font-weight="800" class="font-sans">₹80K – ₹1.5L</text>
+      <text x="0" y="72" fill="#94a3b8" font-size="13" class="font-sans">Custom mobile app + Admin portal</text>
+      <text x="0" y="90" fill="#64748b" font-size="12" class="font-sans">Timeline: 4–8 weeks</text>
+    </g>
+
+    <line x1="730" y1="55" x2="730" y2="155" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+    <!-- Tier 3 -->
+    <g transform="translate(770, 60)">
+      <text x="0" y="20" fill="#ffffff" font-size="18" font-weight="700" class="font-sans">Custom Platform</text>
+      <text x="0" y="44" fill="#ec4899" font-size="22" font-weight="800" class="font-sans">₹2.5L – ₹5.0L+</text>
+      <text x="0" y="72" fill="#94a3b8" font-size="13" class="font-sans">Enterprise ERP / Telemetry / AI</text>
+      <text x="0" y="90" fill="#64748b" font-size="12" class="font-sans">Timeline: 8–14 weeks</text>
+    </g>
+
+    <!-- Action / Contact Card -->
+    <g transform="translate(1090, 0)">
+      <rect width="630" height="175" rx="16" fill="url(#accentGrad)" filter="url(#shadow)"/>
+      
+      <text x="40" y="40" fill="#ffffff" font-size="13" font-weight="700" class="font-sans label">LET'S BUILD YOUR DIGITAL SOLUTION</text>
+      <text x="40" y="75" fill="#ffffff" font-size="26" class="font-sans heading">Book a 15-Min Blueprint Call</text>
+
+      <!-- Details -->
+      <g transform="translate(40, 105)">
+        <text x="0" y="16" fill="#ffffff" font-size="14" font-weight="600" class="font-sans">🌐 ajcreatorswebsite.vercel.app</text>
+        <text x="0" y="38" fill="#ffffff" font-size="14" font-weight="600" class="font-sans">📸 @aj_creators.in</text>
+        <text x="300" y="16" fill="#ffffff" font-size="14" font-weight="600" class="font-sans">✉️ ajcreations.services@gmail.com</text>
+        <text x="300" y="38" fill="#ffffff" font-size="14" font-weight="600" class="font-sans">📱 +91 9704770375 (WhatsApp / Direct)</text>
+      </g>
+    </g>
+  </g>
+</svg>
